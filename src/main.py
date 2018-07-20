@@ -3,7 +3,10 @@ import numpy as np
 import sys
 import os
 from code_metrics import extractor
-
+from git import Repo
+import subprocess
+from subprocess import Popen, PIPE
+from os import path
 
 
 def main():
@@ -19,18 +22,19 @@ def main():
     # 3) load Change-Metrics of each considered file
 
     # 4) load preprocess-dataset
-    preprocess_data = pd.read_csv('preprocess_dataset/dataset.csv', skiprows=1)
+    preprocess_data = pd.read_csv('preprocess_dataset/dataset.csv')
 
     ############################
     # COMPUTE METRICS FOR FILE #
     ############################
     # list() of list() of features
     feature_rows = list()
+
     # for each file in preprocess-dataset
-    for record in preprocess_data:
+    for row in preprocess_data.itertuples():
         feature_row = list()
         code_metrics = dict()
-        
+
         # list() code-metrics
         # list() checkstyle-metrics
         # list() pmd-metrics
@@ -41,10 +45,48 @@ def main():
         # list() labels
 
         # 5) fetch patch of file & fetch patch of previous patchset/base
+        fetch_url = row[1]
+        project_name = row[2]
+        revision_nr = row[5]
+        ref = row[6]
+        file_path = row[8]
+        repo_dir = row[9]
+
+        repo_current_loc = repo_dir + '/current-' + project_name + '/'
+        repo_previous_loc = repo_dir + '/previous-' + project_name + '/'
+
+        fname_current = repo_current_loc + file_path
+        fname_previous = repo_previous_loc + file_path
+
+        print("<====================================================================>")
+        checkout_ref(repo_current_loc, ref, fetch_url)
+        print("<=============FILE EXISTS============>", os.path.isfile(fname_current))
+        print("<====================================================================>")
+
+        # https://stackoverflow.com/questions/692246/undo-working-copy-modifications-of-one-file-in-git
+        patch_nr = ref.split("/")[-1]
+
+        if int(patch_nr) == 1:
+            print("<====================================================================>")
+            checkout_prev_file_version(repo_previous_loc, file_path, revision_nr)
+            print("<=============FILE EXISTS============>", os.path.isfile(fname_previous))
+            print("<====================================================================>")
+        else:
+            previous_ref = int(patch_nr) - 1
+            new_ref = ref.split("/")[:-1]
+            x = ''
+            for s in new_ref:
+                x = x+s+'/'
+            x = x + str(previous_ref)
+            print("<====================================================================>")
+            checkout_ref(repo_previous_loc, x, fetch_url)
+            print("<=============FILE EXISTS============>", os.path.isfile(fname_previous))
+            print("<====================================================================>")
+            
 
         # 6) compute Code-Metrics -> save features
-        code_metrics = extractor.createLog(record)
-    
+        # code_metrics = extractor.createLog(record)
+
         # 7) compute checkstyle-metrics -> save features
 
         # 8) compute pmd-metrics -> save features
@@ -64,6 +106,29 @@ def main():
         feature_rows.append(feature_row)
     # 15) print each feature-row into a data-set
     print('> finished analyzing')
+
+
+def checkout_ref(repoLoc, ref, fetchUrl):
+    repository = path.dirname(repoLoc)
+
+    git_command = ['git', 'fetch', fetchUrl, ref]
+    git_query = subprocess.Popen(git_command, cwd=repository)
+    git_query.communicate()
+
+    git_command2 = ['git', 'checkout', 'FETCH_HEAD', '--force']
+    git_query2 = subprocess.Popen(git_command2, cwd=repository)
+    git_query2.communicate()
+
+def checkout_prev_file_version(repoLoc, filePath, revisionNr):
+    repository = path.dirname(repoLoc)
+
+    git_command = ['git', 'checkout', revisionNr, '--force']
+    git_query = subprocess.Popen(git_command, cwd=repository)
+    git_query.communicate()
+
+    git_command2 = ['git', 'checkout', 'HEAD^', filePath]
+    git_query2 = subprocess.Popen(git_command2, cwd=repository)
+    git_query2.communicate()
 
 if __name__ == "__main__":
     main()

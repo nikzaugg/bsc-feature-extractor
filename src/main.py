@@ -7,22 +7,31 @@ import numpy as np
 
 from code_metrics import extractor as metrics_code
 from checkstyle_metrics import extractor as metrics_checkstyle
+from pmd_metrics import extractor as metrics_pmd
+
 
 def main():
     """ Main entry point to compute features for the training-set """
 
-    ########################
-    # DATA CREATED BEFORE  #
-    ########################
-    # 1) load ChangeDistiller output for current project
+    ## ******************** ##
+    ## DATA CREATED BEFORE  ##
+    ## ******************** ##
 
-    # 2) load tf-idf matrix of considered commit-messages
+    ######################################################
+    # 1) load ChangeDistiller output for current project #
+    ######################################################
 
-    # 3) load Change-Metrics of each considered file
+    #######################################################
+    # 2) load tf-idf matrix of considered commit-messages #
+    #######################################################
 
-    ###############################
-    # 4) load preprocess-dataset  #
-    ###############################
+    ##################################################
+    # 3) load Change-Metrics of each considered file #
+    ##################################################
+
+    ##############################
+    # 4) load preprocess-dataset #
+    ##############################
     preprocess_data = pd.read_csv('preprocess_dataset/dataset.csv')
 
     ############################
@@ -35,6 +44,8 @@ def main():
     for row in preprocess_data.itertuples():
         feature_row = list()
         code_metrics = dict()
+        checkstyle_metrics = dict()
+        pmd_metrics = dict()
 
         # list() code-metrics
         # list() checkstyle-metrics
@@ -45,9 +56,9 @@ def main():
         # list() scc-metrics
         # list() labels
 
-        ####################################################################
-        # 5) fetch patch of file & fetch patch of previous patchset/base   #
-        ####################################################################
+        ##################################################################
+        # 5) fetch patch of file & fetch patch of previous patchset/base #
+        ##################################################################
         fetch_url = row[1]
         project_name = row[2]
         revision_nr = row[5]
@@ -68,17 +79,17 @@ def main():
         print("<=========================== CURRENT ==============================>")
         checkout_ref(repo_current_loc, ref, fetch_url)
         f_current_exists = os.path.isfile(fname_current)
-        print("<=============FILE EXISTS============>", f_current_exists)
+        print("<============= FILE EXISTS ============>", f_current_exists)
 
         # CHECKOUT PREVIOUS
-        # https://stackoverflow.com/questions/692246/undo-working-copy-modifications-of-one-file-in-git
         patch_nr = ref.split("/")[-1]
         # If current patch is patch nr. 1
         if int(patch_nr) == 1:
             print("<=========================== PREVIOUS ==============================>")
-            checkout_prev_file_version(repo_previous_loc, file_path, revision_nr)
+            checkout_prev_file_version(
+                repo_previous_loc, file_path, revision_nr)
             f_previous_exists = os.path.isfile(fname_previous)
-            print("<=============FILE EXISTS============>", f_previous_exists)
+            print("<============= FILE EXISTS ============>", f_previous_exists)
         # If current patch is not patch nr. 1
         else:
             previous_ref = int(patch_nr) - 1
@@ -90,39 +101,63 @@ def main():
             print("<=========================== PREVIOUS ==============================>")
             checkout_ref(repo_previous_loc, x, fetch_url)
             f_previous_exists = os.path.isfile(fname_previous)
-            print("<=============FILE EXISTS============>", f_previous_exists)
-            
-            
+            print("<============= FILE EXISTS ============>", f_previous_exists)
+
+        ############################################
+        # 6) compute Code-Metrics -> save features #
+        ############################################
+        code_metrics = metrics_code.extract(
+            fname_current, fname_previous, f_previous_exists)
+
+        ##################################################
+        # 7) compute checkstyle-metrics -> save features #
+        ##################################################
+        checkstyle_metrics = metrics_checkstyle.extract(
+            fname_current, fname_previous, f_previous_exists)
+
+        ###########################################
+        # 8) compute pmd-metrics -> save features #
+        ###########################################
+        pmd_metrics = metrics_pmd.extract(
+            fname_current, fname_previous, f_previous_exists)
+
         #############################################
-        # 6) compute Code-Metrics -> save features  #
+        # 9) lookup change-metrics -> save features #
         #############################################
-        code_metrics = metrics_code.extract(fname_current, fname_previous, f_previous_exists)
 
-        # 7) compute checkstyle-metrics -> save features
-        checkstyle_metrics = metrics_checkstyle.extract(fname_current, fname_previous, f_previous_exists)
+        ##########################################
+        # 10) lookup tf-idf row -> save features #
+        ##########################################
 
-        # 8) compute pmd-metrics -> save features
+        ###########################################
+        # 11) compute ck-metrics -> save features #
+        ###########################################
 
-        # 9) lookup change-metrics -> save features
+        #####################################################
+        # 12) lookup ChangeDistiller types -> save features #
+        #####################################################
 
-        # 10) lookup tf-idf row -> save features
+        ###############################
+        # 13) extract labels --> save #
+        ###############################
 
-        # 11) compute ck-metrics -> save features
-
-        # 12) lookup ChangeDistiller types -> save features
-
-        # 13) extract labels --> save
-
-        # 14) add each feature list to features
+        #########################################
+        # 14) add each feature list to features #
+        #########################################
         feature_row.append(code_metrics)
         feature_row.append(checkstyle_metrics)
+        feature_row.append(pmd_metrics)
         feature_rows.append(feature_row)
-    # 15) print each feature-row into a data-set
+
+    ##############################################
+    # 15) print each feature-row into a data-set #
+    ##############################################
     print(len(feature_rows))
     print('> finished analyzing')
 
 
 def checkout_ref(repoLoc, ref, fetchUrl):
+    """ checkout a ref (refs/*/changes/*) of a given repository """
     repository = os.path.dirname(repoLoc)
 
     git_command = ['git', 'fetch', fetchUrl, ref]
@@ -133,7 +168,9 @@ def checkout_ref(repoLoc, ref, fetchUrl):
     git_query2 = subprocess.Popen(git_command2, cwd=repository)
     git_query2.communicate()
 
+
 def checkout_prev_file_version(repoLoc, filePath, revisionNr):
+    """ checkout the previous commit where the given file was last modified of a given repository """
     repository = os.path.dirname(repoLoc)
 
     git_command = ['git', 'checkout', revisionNr, '--force']
@@ -143,6 +180,7 @@ def checkout_prev_file_version(repoLoc, filePath, revisionNr):
     git_command2 = ['git', 'checkout', 'HEAD^', filePath]
     git_query2 = subprocess.Popen(git_command2, cwd=repository)
     git_query2.communicate()
+
 
 if __name__ == "__main__":
     main()

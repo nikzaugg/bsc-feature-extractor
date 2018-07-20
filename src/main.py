@@ -21,7 +21,9 @@ def main():
 
     # 3) load Change-Metrics of each considered file
 
-    # 4) load preprocess-dataset
+    ###############################
+    # 4) load preprocess-dataset  #
+    ###############################
     preprocess_data = pd.read_csv('preprocess_dataset/dataset.csv')
 
     ############################
@@ -44,7 +46,9 @@ def main():
         # list() scc-metrics
         # list() labels
 
-        # 5) fetch patch of file & fetch patch of previous patchset/base
+        ####################################################################
+        # 5) fetch patch of file & fetch patch of previous patchset/base   #
+        ####################################################################
         fetch_url = row[1]
         project_name = row[2]
         revision_nr = row[5]
@@ -58,19 +62,25 @@ def main():
         fname_current = repo_current_loc + file_path
         fname_previous = repo_previous_loc + file_path
 
-        print("<====================================================================>")
-        checkout_ref(repo_current_loc, ref, fetch_url)
-        print("<=============FILE EXISTS============>", os.path.isfile(fname_current))
-        print("<====================================================================>")
+        f_current_exists = False
+        f_previous_exists = False
 
+        # CHECKOUT CURRENT
+        print("<=========================== CURRENT ==============================>")
+        checkout_ref(repo_current_loc, ref, fetch_url)
+        f_current_exists = os.path.isfile(fname_current)
+        print("<=============FILE EXISTS============>", f_current_exists)
+
+        # CHECKOUT PREVIOUS
         # https://stackoverflow.com/questions/692246/undo-working-copy-modifications-of-one-file-in-git
         patch_nr = ref.split("/")[-1]
-
+        # If current patch is patch nr. 1
         if int(patch_nr) == 1:
-            print("<====================================================================>")
+            print("<=========================== PREVIOUS ==============================>")
             checkout_prev_file_version(repo_previous_loc, file_path, revision_nr)
-            print("<=============FILE EXISTS============>", os.path.isfile(fname_previous))
-            print("<====================================================================>")
+            f_previous_exists = os.path.isfile(fname_previous)
+            print("<=============FILE EXISTS============>", f_previous_exists)
+        # If current patch is not patch nr. 1
         else:
             previous_ref = int(patch_nr) - 1
             new_ref = ref.split("/")[:-1]
@@ -78,14 +88,16 @@ def main():
             for s in new_ref:
                 x = x+s+'/'
             x = x + str(previous_ref)
-            print("<====================================================================>")
+            print("<=========================== PREVIOUS ==============================>")
             checkout_ref(repo_previous_loc, x, fetch_url)
-            print("<=============FILE EXISTS============>", os.path.isfile(fname_previous))
-            print("<====================================================================>")
+            f_previous_exists = os.path.isfile(fname_previous)
+            print("<=============FILE EXISTS============>", f_previous_exists)
             
-
-        # 6) compute Code-Metrics -> save features
-        # code_metrics = extractor.createLog(record)
+            
+        #############################################
+        # 6) compute Code-Metrics -> save features  #
+        #############################################
+        code_metrics = extractor.createLog(fname_current, fname_previous, f_previous_exists)
 
         # 7) compute checkstyle-metrics -> save features
 
@@ -105,6 +117,7 @@ def main():
         feature_row.append(code_metrics)
         feature_rows.append(feature_row)
     # 15) print each feature-row into a data-set
+    print(len(feature_rows))
     print('> finished analyzing')
 
 

@@ -6,27 +6,26 @@ from .featureAggregator import aggregate
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
-# abspath = os.path.abspath(__file__)
-# dname = os.path.dirname(abspath)
-# os.chdir(dname)
-
-def createLog(record):
-    # create path to the two files
-    filePath_current = dir_path + '/current-repo/class.java'
-    filePath_previous = dir_path + '/previous-repo/class.java'
+def createLog(currentFile, previousFile, previousExists):
+    filePath_current = currentFile
+    filePath_previous = previousFile
 
     # copy the two files
     shutil.copy(filePath_current, dir_path + '/current')
-    shutil.copy(filePath_previous, dir_path + '/previous')
+    if previousExists:
+        shutil.copy(filePath_previous, dir_path + '/previous')
 
     jar = dir_path + '/ucc-j.jar'
 
     # create a code-metric report for each file
     subprocess.call(["java", "-jar", jar, "-dir", dir_path + "/current", "-outdir", dir_path + "/current-result", "-unified"])
-    subprocess.call(["java", "-jar", jar, "-dir", dir_path + "/previous", "-outdir", dir_path + "/previous-result", "-unified"])
+    if previousExists:
+        subprocess.call(["java", "-jar", jar, "-dir", dir_path + "/previous", "-outdir", dir_path + "/previous-result", "-unified"])
 
-    features = aggregate()
+    features = aggregate(previousExists)
 
+    deleteFolderContents(dir_path + '/current') 
+    deleteFolderContents(dir_path + '/previous')
     deleteFolderContents(dir_path + '/current-result') 
     deleteFolderContents(dir_path + '/previous-result')
 

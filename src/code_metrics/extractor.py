@@ -6,7 +6,7 @@ from .featureAggregator import aggregate
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
-def createLog(currentFile, previousFile, previousExists):
+def extract(currentFile, previousFile, previousExists):
     filePath_current = currentFile
     filePath_previous = previousFile
 

@@ -1,13 +1,12 @@
-import pandas as pd
-import numpy as np
 import sys
 import os
-from code_metrics import extractor
-from git import Repo
 import subprocess
-from subprocess import Popen, PIPE
-from os import path
 
+import pandas as pd
+import numpy as np
+
+from code_metrics import extractor as metrics_code
+from checkstyle_metrics import extractor as metrics_checkstyle
 
 def main():
     """ Main entry point to compute features for the training-set """
@@ -97,9 +96,10 @@ def main():
         #############################################
         # 6) compute Code-Metrics -> save features  #
         #############################################
-        code_metrics = extractor.createLog(fname_current, fname_previous, f_previous_exists)
+        code_metrics = metrics_code.extract(fname_current, fname_previous, f_previous_exists)
 
         # 7) compute checkstyle-metrics -> save features
+        checkstyle_metrics = metrics_checkstyle.extract(fname_current, fname_previous, f_previous_exists)
 
         # 8) compute pmd-metrics -> save features
 
@@ -115,6 +115,7 @@ def main():
 
         # 14) add each feature list to features
         feature_row.append(code_metrics)
+        feature_row.append(checkstyle_metrics)
         feature_rows.append(feature_row)
     # 15) print each feature-row into a data-set
     print(len(feature_rows))
@@ -122,7 +123,7 @@ def main():
 
 
 def checkout_ref(repoLoc, ref, fetchUrl):
-    repository = path.dirname(repoLoc)
+    repository = os.path.dirname(repoLoc)
 
     git_command = ['git', 'fetch', fetchUrl, ref]
     git_query = subprocess.Popen(git_command, cwd=repository)
@@ -133,7 +134,7 @@ def checkout_ref(repoLoc, ref, fetchUrl):
     git_query2.communicate()
 
 def checkout_prev_file_version(repoLoc, filePath, revisionNr):
-    repository = path.dirname(repoLoc)
+    repository = os.path.dirname(repoLoc)
 
     git_command = ['git', 'checkout', revisionNr, '--force']
     git_query = subprocess.Popen(git_command, cwd=repository)

@@ -1,10 +1,13 @@
 import pandas as pd
 import numpy as np
+import sys
+import os
+from code_metrics import extractor
+
 
 
 def main():
-    """ Main entry point to compute features """
-
+    """ Main entry point to compute features for the training-set """
 
     ########################
     # DATA CREATED BEFORE  #
@@ -16,12 +19,18 @@ def main():
     # 3) load Change-Metrics of each considered file
 
     # 4) load preprocess-dataset
+    preprocess_data = pd.read_csv('preprocess_dataset/dataset.csv', skiprows=1)
 
     ############################
     # COMPUTE METRICS FOR FILE #
     ############################
+    # list() of list() of features
+    feature_rows = list()
     # for each file in preprocess-dataset
-        # list() of list() of features
+    for record in preprocess_data:
+        feature_row = list()
+        code_metrics = dict()
+        
         # list() code-metrics
         # list() checkstyle-metrics
         # list() pmd-metrics
@@ -34,7 +43,8 @@ def main():
         # 5) fetch patch of file & fetch patch of previous patchset/base
 
         # 6) compute Code-Metrics -> save features
-
+        code_metrics = extractor.createLog(record)
+    
         # 7) compute checkstyle-metrics -> save features
 
         # 8) compute pmd-metrics -> save features
@@ -50,11 +60,10 @@ def main():
         # 13) extract labels --> save
 
         # 14) add each feature list to features
-
+        feature_row.append(code_metrics)
+        feature_rows.append(feature_row)
     # 15) print each feature-row into a data-set
+    print('> finished analyzing')
 
-    pass
-
-
-if __name__ == 'main':
+if __name__ == "__main__":
     main()

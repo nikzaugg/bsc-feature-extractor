@@ -8,6 +8,7 @@ import numpy as np
 from code_metrics import extractor as metrics_code
 from checkstyle_metrics import extractor as metrics_checkstyle
 from pmd_metrics import extractor as metrics_pmd
+from change_metrics import extractor as metrics_change
 
 
 def main():
@@ -28,6 +29,7 @@ def main():
     ##################################################
     # 3) load Change-Metrics of each considered file #
     ##################################################
+    changeData = metrics_change.loadData('acceleo')
 
     ##############################
     # 4) load preprocess-dataset #
@@ -46,6 +48,7 @@ def main():
         code_metrics = dict()
         checkstyle_metrics = dict()
         pmd_metrics = dict()
+        change_metrics = dict()
 
         # list() code-metrics
         # list() checkstyle-metrics
@@ -62,9 +65,10 @@ def main():
         fetch_url = row[1]
         project_name = row[2]
         revision_nr = row[5]
-        ref = row[6]
-        file_path = row[8]
-        repo_dir = row[9]
+        commit_id = row[6]
+        ref = row[7]
+        file_path = row[9]
+        repo_dir = row[10]
 
         repo_current_loc = repo_dir + '/current-' + project_name + '/'
         repo_previous_loc = repo_dir + '/previous-' + project_name + '/'
@@ -106,32 +110,30 @@ def main():
         ############################################
         # 6) compute Code-Metrics -> save features #
         ############################################
-        code_metrics = metrics_code.extract(
-            fname_current, fname_previous, f_previous_exists)
+        # code_metrics = metrics_code.extract(fname_current, fname_previous, f_previous_exists)
 
         ##################################################
         # 7) compute checkstyle-metrics -> save features #
         ##################################################
-        checkstyle_metrics = metrics_checkstyle.extract(
-            fname_current, fname_previous, f_previous_exists)
+        # checkstyle_metrics = metrics_checkstyle.extract(fname_current, fname_previous, f_previous_exists)
 
         ###########################################
         # 8) compute pmd-metrics -> save features #
         ###########################################
-        pmd_metrics = metrics_pmd.extract(
-            fname_current, fname_previous, f_previous_exists)
-
-        #############################################
-        # 9) lookup change-metrics -> save features #
-        #############################################
-
-        ##########################################
-        # 10) lookup tf-idf row -> save features #
-        ##########################################
+        # pmd_metrics = metrics_pmd.extract(fname_current, fname_previous, f_previous_exists)
 
         ###########################################
-        # 11) compute ck-metrics -> save features #
+        # 9) compute ck-metrics -> save features #
         ###########################################
+
+        #############################################
+        # 10) lookup change-metrics -> save features #
+        #############################################
+        change_metrics = metrics_change.extract(changeData, row)
+
+        ##########################################
+        # 11) lookup tf-idf row -> save features #
+        ##########################################
 
         #####################################################
         # 12) lookup ChangeDistiller types -> save features #
@@ -147,6 +149,8 @@ def main():
         feature_row.append(code_metrics)
         feature_row.append(checkstyle_metrics)
         feature_row.append(pmd_metrics)
+        feature_row.append(change_metrics)
+
         feature_rows.append(feature_row)
 
     ##############################################

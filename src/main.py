@@ -8,6 +8,7 @@ import numpy as np
 from code_metrics import extractor as metrics_code
 from checkstyle_metrics import extractor as metrics_checkstyle
 from pmd_metrics import extractor as metrics_pmd
+from ck_metrics import extractor as metrics_ck
 from change_metrics import extractor as metrics_change
 
 
@@ -16,7 +17,7 @@ def main():
 
     ## ******************** ##
     ## DATA CREATED BEFORE  ##
-    ## ******************** ##
+    ## ******************** ## 
 
     ######################################################
     # 1) load ChangeDistiller output for current project #
@@ -48,6 +49,7 @@ def main():
         code_metrics = dict()
         checkstyle_metrics = dict()
         pmd_metrics = dict()
+        ck_metrics = dict()
         change_metrics = dict()
 
         # list() code-metrics
@@ -79,13 +81,13 @@ def main():
         f_current_exists = False
         f_previous_exists = False
 
-        # CHECKOUT CURRENT
+        # CHECKOUT CURRENT VERSION OF FILE
         print("<=========================== CURRENT ==============================>")
         checkout_ref(repo_current_loc, ref, fetch_url)
         f_current_exists = os.path.isfile(fname_current)
         print("<============= FILE EXISTS ============>", f_current_exists)
 
-        # CHECKOUT PREVIOUS
+        # CHECKOUT PREVIOUS VERSION OF FILE
         patch_nr = ref.split("/")[-1]
         # If current patch is patch nr. 1
         if int(patch_nr) == 1:
@@ -125,11 +127,12 @@ def main():
         ###########################################
         # 9) compute ck-metrics -> save features #
         ###########################################
+        # ck_metrics = metrics_ck.extract(fname_current, fname_previous, f_previous_exists)
 
         #############################################
         # 10) lookup change-metrics -> save features #
         #############################################
-        change_metrics = metrics_change.extract(changeData, row)
+        # change_metrics = metrics_change.extract(changeData, row)
 
         ##########################################
         # 11) lookup tf-idf row -> save features #
@@ -149,6 +152,7 @@ def main():
         feature_row.append(code_metrics)
         feature_row.append(checkstyle_metrics)
         feature_row.append(pmd_metrics)
+        feature_row.append(ck_metrics)
         feature_row.append(change_metrics)
 
         feature_rows.append(feature_row)

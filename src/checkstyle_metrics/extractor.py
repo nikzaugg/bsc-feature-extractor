@@ -25,23 +25,23 @@ def extract(currentFile, previousFile, previousExists):
         call(["java", "-jar", jar, "-c", sun_checks, previousFile, "-f", "xml", "-o", previous_xml])
 
     # parse xml
+    res = list()
     delta = None
     previous_res = None
     current_res = parse(current_xml, current_out_dir)
     if previousExists:
         previous_res = parse(previous_xml, previous_out_dir)
         delta = diff(current_out_dir, previous_out_dir)
-        print("DELTA: ", len(delta))
 
+        res.append(delta)
+        res.append(current_res)
+        res.append(previous_res) 
+    else:
+        res.append(current_res)  
     deleteFolderContents(dir_path + '/current') 
     deleteFolderContents(dir_path + '/previous')
 
     # return res
-    res = list()
-    res.append(current_res)
-    res.append(previous_res)
-    res.append(delta)
-
     return res
 
 

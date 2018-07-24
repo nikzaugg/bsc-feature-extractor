@@ -28,11 +28,13 @@ def extract(currentFile, previousFile, previousExists):
         for (k, v) in current_res.items():
             diff = float(v) - float(previous_res[k])
             diff_res[k] = diff
-
-        res.append(previous_res)
+            
         res.append(diff_res)
-
-    res.append(current_res)
+        res.append(current_res)
+        res.append(previous_res)
+        
+    else:
+        res.append(current_res)
    
     deleteFolderContents(dir_path+'/current')
     deleteFolderContents(dir_path+'/previous')

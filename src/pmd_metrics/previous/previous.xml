@@ -1,0 +1,1344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
+    version="6.5.0" timestamp="2018-07-24T18:02:57.335">
+<file name="C:\tmp\previous-acceleo\query\plugins\org.eclipse.acceleo.query\src\org\eclipse\acceleo\query\parser\AstBuilderListener.java">
+<violation beginline="1" endline="10" begincolumn="1" endcolumn="3" rule="CommentSize" ruleset="Documentation" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_documentation.html#commentsize" priority="3">
+Comment is too large: Too many lines
+</violation>
+<violation beginline="11" endline="1301" begincolumn="1" endcolumn="3" rule="ExcessiveImports" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#excessiveimports" priority="3">
+A high number of imports can indicate a high degree of coupling within an object.
+</violation>
+<violation beginline="11" endline="1301" begincolumn="1" endcolumn="3" rule="ExcessivePublicCount" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#excessivepubliccount" priority="3">
+This class has a bunch of public methods and attributes
+</violation>
+<violation beginline="115" endline="1301" begincolumn="8" endcolumn="1" rule="ExcessiveClassLength" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#excessiveclasslength" priority="3">
+Avoid really long classes.
+</violation>
+<violation beginline="115" endline="1301" begincolumn="8" endcolumn="1" rule="GodClass" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#godclass" priority="3">
+Possible God Class (WMC=48, ATFD=6, TCC=27.405%)
+</violation>
+<violation beginline="115" endline="1301" begincolumn="59" endcolumn="1" rule="TooManyMethods" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#toomanymethods" priority="3">
+This class has too many methods, consider refactoring it.
+</violation>
+<violation beginline="130" endline="130" begincolumn="36" endcolumn="55" rule="LongVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" variable="DIFFERS_SERVICE_NAME" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like DIFFERS_SERVICE_NAME
+</violation>
+<violation beginline="140" endline="140" begincolumn="36" endcolumn="54" rule="LongVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" variable="EQUALS_SERVICE_NAME" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like EQUALS_SERVICE_NAME
+</violation>
+<violation beginline="150" endline="150" begincolumn="36" endcolumn="66" rule="LongVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" variable="GREATER_THAN_EQUAL_SERVICE_NAME" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like GREATER_THAN_EQUAL_SERVICE_NAME
+</violation>
+<violation beginline="155" endline="155" begincolumn="36" endcolumn="62" rule="LongVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" variable="GREATER_THAN_EQUAL_OPERATOR" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like GREATER_THAN_EQUAL_OPERATOR
+</violation>
+<violation beginline="160" endline="160" begincolumn="36" endcolumn="60" rule="LongVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" variable="GREATER_THAN_SERVICE_NAME" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like GREATER_THAN_SERVICE_NAME
+</violation>
+<violation beginline="165" endline="165" begincolumn="36" endcolumn="56" rule="LongVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" variable="GREATER_THAN_OPERATOR" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like GREATER_THAN_OPERATOR
+</violation>
+<violation beginline="170" endline="170" begincolumn="36" endcolumn="63" rule="LongVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" variable="LESS_THAN_EQUAL_SERVICE_NAME" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like LESS_THAN_EQUAL_SERVICE_NAME
+</violation>
+<violation beginline="175" endline="175" begincolumn="36" endcolumn="59" rule="LongVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" variable="LESS_THAN_EQUAL_OPERATOR" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like LESS_THAN_EQUAL_OPERATOR
+</violation>
+<violation beginline="180" endline="180" begincolumn="36" endcolumn="57" rule="LongVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" variable="LESS_THAN_SERVICE_NAME" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like LESS_THAN_SERVICE_NAME
+</violation>
+<violation beginline="185" endline="185" begincolumn="36" endcolumn="53" rule="LongVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" variable="LESS_THAN_OPERATOR" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like LESS_THAN_OPERATOR
+</violation>
+<violation beginline="230" endline="230" begincolumn="36" endcolumn="57" rule="LongVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" variable="UNARY_MIN_SERVICE_NAME" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like UNARY_MIN_SERVICE_NAME
+</violation>
+<violation beginline="235" endline="235" begincolumn="36" endcolumn="53" rule="LongVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" variable="UNARY_MIN_OPERATOR" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like UNARY_MIN_OPERATOR
+</violation>
+<violation beginline="270" endline="270" begincolumn="36" endcolumn="55" rule="LongVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" variable="IMPLIES_SERVICE_NAME" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like IMPLIES_SERVICE_NAME
+</violation>
+<violation beginline="280" endline="280" begincolumn="41" endcolumn="62" rule="LongVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" variable="OPERATOR_SERVICE_NAMES" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like OPERATOR_SERVICE_NAMES
+</violation>
+<violation beginline="285" endline="285" begincolumn="37" endcolumn="57" rule="LongVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" variable="THIS_SHOULDN_T_HAPPEN" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like THIS_SHOULDN_T_HAPPEN
+</violation>
+<violation beginline="292" endline="422" begincolumn="23" endcolumn="9" rule="AtLeastOneConstructor" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#atleastoneconstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="294" endline="421" begincolumn="24" endcolumn="17" rule="ExcessiveMethodLength" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#excessivemethodlength" priority="3">
+Avoid really long methods.
+</violation>
+<violation beginline="294" endline="294" begincolumn="79" endcolumn="110" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" variable="offendingSymbol" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'offendingSymbol' is not assigned and could be declared final
+</violation>
+<violation beginline="294" endline="294" begincolumn="41" endcolumn="76" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" variable="recognizer" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'recognizer' is not assigned and could be declared final
+</violation>
+<violation beginline="294" endline="421" begincolumn="24" endcolumn="17" rule="NcssCount" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#ncsscount" priority="3">
+The method 'syntaxError(Recognizer, Object, int, int, String, RecognitionException)' has a NCSS line count of 110.
+</violation>
+<violation beginline="294" endline="421" begincolumn="24" endcolumn="17" rule="CyclomaticComplexity" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'syntaxError(Recognizer, Object, int, int, String, RecognitionException)' has a cyclomatic complexity of 16.
+</violation>
+<violation beginline="295" endline="295" begincolumn="47" endcolumn="64" rule="LongVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" variable="charPositionInLine" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like charPositionInLine
+</violation>
+<violation beginline="295" endline="295" begincolumn="119" endcolumn="119" rule="ShortVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" variable="e" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like e
+</violation>
+<violation beginline="295" endline="295" begincolumn="43" endcolumn="64" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" variable="charPositionInLine" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'charPositionInLine' is not assigned and could be declared final
+</violation>
+<violation beginline="295" endline="295" begincolumn="88" endcolumn="119" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" variable="e" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'e' is not assigned and could be declared final
+</violation>
+<violation beginline="295" endline="295" begincolumn="33" endcolumn="40" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" variable="line" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'line' is not assigned and could be declared final
+</violation>
+<violation beginline="295" endline="295" begincolumn="67" endcolumn="85" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" variable="msg" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'msg' is not assigned and could be declared final
+</violation>
+<violation beginline="296" endline="420" begincolumn="25" endcolumn="25" rule="ConfusingTernary" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#confusingternary" priority="3">
+Avoid if (x != y) ..; else ..;
+</violation>
+<violation beginline="298" endline="298" begincolumn="41" endcolumn="49" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="299" endline="299" begincolumn="81" endcolumn="103" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="300" endline="300" begincolumn="41" endcolumn="49" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="301" endline="302" begincolumn="66" endcolumn="73" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="301" endline="302" begincolumn="66" endcolumn="73" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="301" endline="302" begincolumn="82" endcolumn="72" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="301" endline="302" begincolumn="82" endcolumn="72" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="303" endline="303" begincolumn="41" endcolumn="58" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="304" endline="304" begincolumn="41" endcolumn="56" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="306" endline="421" begincolumn="55" endcolumn="73" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" variable="startPosition" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'startPosition' (lines '306'-'421').
+</violation>
+<violation beginline="306" endline="307" begincolumn="71" endcolumn="73" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="306" endline="307" begincolumn="71" endcolumn="73" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="306" endline="307" begincolumn="87" endcolumn="72" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="306" endline="307" begincolumn="87" endcolumn="72" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="308" endline="421" begincolumn="55" endcolumn="128" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" variable="endPosition" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'endPosition' (lines '308'-'421').
+</violation>
+<violation beginline="308" endline="308" begincolumn="69" endcolumn="128" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="308" endline="308" begincolumn="85" endcolumn="123" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="309" endline="309" begincolumn="45" endcolumn="66" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="310" endline="310" begincolumn="49" endcolumn="57" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="311" endline="311" begincolumn="77" endcolumn="120" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="311" endline="311" begincolumn="77" endcolumn="120" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="311" endline="311" begincolumn="77" endcolumn="120" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="312" endline="312" begincolumn="79" endcolumn="102" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="313" endline="313" begincolumn="49" endcolumn="66" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="314" endline="314" begincolumn="49" endcolumn="64" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="315" endline="315" begincolumn="49" endcolumn="58" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="316" endline="316" begincolumn="87" endcolumn="89" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="316" endline="316" begincolumn="66" endcolumn="83" rule="LongVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" variable="variableExpression" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like variableExpression
+</violation>
+<violation beginline="317" endline="317" begincolumn="97" endcolumn="123" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="317" endline="317" begincolumn="75" endcolumn="93" rule="LongVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" variable="variableDeclaration" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like variableDeclaration
+</violation>
+<violation beginline="319" endline="319" begincolumn="49" endcolumn="66" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="320" endline="320" begincolumn="49" endcolumn="64" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="321" endline="321" begincolumn="49" endcolumn="52" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="322" endline="322" begincolumn="89" endcolumn="111" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="323" endline="323" begincolumn="49" endcolumn="57" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="324" endline="324" begincolumn="49" endcolumn="66" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="325" endline="325" begincolumn="49" endcolumn="64" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="326" endline="326" begincolumn="54" endcolumn="63" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="327" endline="327" begincolumn="49" endcolumn="57" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="328" endline="328" begincolumn="91" endcolumn="114" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="329" endline="329" begincolumn="49" endcolumn="66" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="330" endline="330" begincolumn="49" endcolumn="64" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="331" endline="331" begincolumn="49" endcolumn="57" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="334" endline="335" begincolumn="71" endcolumn="127" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="334" endline="335" begincolumn="71" endcolumn="127" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="335" endline="335" begincolumn="66" endcolumn="126" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="335" endline="335" begincolumn="66" endcolumn="126" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="336" endline="336" begincolumn="69" endcolumn="128" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="336" endline="336" begincolumn="85" endcolumn="123" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="337" endline="337" begincolumn="45" endcolumn="70" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="338" endline="338" begincolumn="49" endcolumn="57" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="339" endline="339" begincolumn="77" endcolumn="108" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="339" endline="339" begincolumn="77" endcolumn="108" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="340" endline="340" begincolumn="74" endcolumn="88" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="340" endline="341" begincolumn="74" endcolumn="67" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="340" endline="341" begincolumn="114" endcolumn="66" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="342" endline="342" begincolumn="49" endcolumn="64" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="343" endline="343" begincolumn="87" endcolumn="89" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="343" endline="343" begincolumn="66" endcolumn="83" rule="LongVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" variable="variableExpression" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like variableExpression
+</violation>
+<violation beginline="344" endline="344" begincolumn="97" endcolumn="123" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="344" endline="344" begincolumn="75" endcolumn="93" rule="LongVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" variable="variableDeclaration" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like variableDeclaration
+</violation>
+<violation beginline="346" endline="346" begincolumn="49" endcolumn="66" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="347" endline="347" begincolumn="49" endcolumn="64" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="348" endline="348" begincolumn="49" endcolumn="52" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="350" endline="350" begincolumn="87" endcolumn="89" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="350" endline="350" begincolumn="66" endcolumn="83" rule="LongVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" variable="variableExpression" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like variableExpression
+</violation>
+<violation beginline="351" endline="351" begincolumn="49" endcolumn="57" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="352" endline="353" begincolumn="107" endcolumn="89" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="352" endline="352" begincolumn="80" endcolumn="103" rule="LongVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" variable="errorVariableDeclaration" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like errorVariableDeclaration
+</violation>
+<violation beginline="354" endline="354" begincolumn="49" endcolumn="66" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="355" endline="355" begincolumn="49" endcolumn="64" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="356" endline="356" begincolumn="49" endcolumn="57" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="358" endline="358" begincolumn="81" endcolumn="103" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="359" endline="359" begincolumn="41" endcolumn="58" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="360" endline="360" begincolumn="41" endcolumn="56" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="361" endline="361" begincolumn="41" endcolumn="49" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="363" endline="363" begincolumn="41" endcolumn="49" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="364" endline="364" begincolumn="69" endcolumn="71" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="365" endline="365" begincolumn="89" endcolumn="115" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="365" endline="365" begincolumn="67" endcolumn="85" rule="LongVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" variable="errorCollectionCall" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like errorCollectionCall
+</violation>
+<violation beginline="366" endline="366" begincolumn="41" endcolumn="58" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="366" endline="366" begincolumn="81" endcolumn="98" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="367" endline="367" begincolumn="41" endcolumn="56" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="367" endline="368" begincolumn="41" endcolumn="77" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="367" endline="368" begincolumn="79" endcolumn="76" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="367" endline="368" begincolumn="95" endcolumn="71" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="369" endline="369" begincolumn="41" endcolumn="49" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="371" endline="371" begincolumn="41" endcolumn="49" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="372" endline="372" begincolumn="69" endcolumn="71" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="373" endline="374" begincolumn="99" endcolumn="81" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="373" endline="373" begincolumn="72" endcolumn="95" rule="LongVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" variable="errorFeatureAccessOrCall" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like errorFeatureAccessOrCall
+</violation>
+<violation beginline="375" endline="375" begincolumn="41" endcolumn="58" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="375" endline="375" begincolumn="86" endcolumn="103" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="376" endline="376" begincolumn="41" endcolumn="56" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="376" endline="377" begincolumn="41" endcolumn="77" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="376" endline="377" begincolumn="84" endcolumn="76" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="376" endline="377" begincolumn="100" endcolumn="71" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="378" endline="378" begincolumn="41" endcolumn="49" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="380" endline="380" begincolumn="41" endcolumn="49" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="380" endline="380" begincolumn="53" endcolumn="77" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="381" endline="394" begincolumn="41" endcolumn="41" rule="TooFewBranchesForASwitchStatement" ruleset="Performance" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_performance.html#toofewbranchesforaswitchstatement" priority="3">
+A switch with less than three branches is inefficient, use a if statement instead.
+</violation>
+<violation beginline="381" endline="381" begincolumn="49" endcolumn="73" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="383" endline="383" begincolumn="97" endcolumn="119" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="384" endline="385" begincolumn="82" endcolumn="89" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="384" endline="385" begincolumn="82" endcolumn="89" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="384" endline="385" begincolumn="98" endcolumn="88" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="384" endline="385" begincolumn="98" endcolumn="88" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="386" endline="386" begincolumn="57" endcolumn="74" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="387" endline="387" begincolumn="57" endcolumn="72" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="387" endline="388" begincolumn="57" endcolumn="93" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="387" endline="388" begincolumn="91" endcolumn="92" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="387" endline="388" begincolumn="107" endcolumn="87" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="389" endline="389" begincolumn="57" endcolumn="65" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="398" endline="398" begincolumn="37" endcolumn="55" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="399" endline="421" begincolumn="55" endcolumn="93" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" variable="startPosition" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'startPosition' (lines '399'-'421').
+</violation>
+<violation beginline="399" endline="400" begincolumn="71" endcolumn="93" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="399" endline="400" begincolumn="71" endcolumn="93" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="399" endline="400" begincolumn="87" endcolumn="92" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="399" endline="400" begincolumn="87" endcolumn="92" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="399" endline="400" begincolumn="87" endcolumn="92" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="399" endline="400" begincolumn="116" endcolumn="69" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="401" endline="421" begincolumn="55" endcolumn="128" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" variable="endPosition" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'endPosition' (lines '401'-'421').
+</violation>
+<violation beginline="401" endline="401" begincolumn="69" endcolumn="128" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="401" endline="401" begincolumn="85" endcolumn="123" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="402" endline="402" begincolumn="41" endcolumn="49" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="403" endline="403" begincolumn="70" endcolumn="100" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="403" endline="403" begincolumn="70" endcolumn="100" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="404" endline="404" begincolumn="75" endcolumn="75" rule="AvoidLiteralsInIfCondition" ruleset="Error Prone" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#avoidliteralsinifcondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="404" endline="404" begincolumn="45" endcolumn="70" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="405" endline="406" begincolumn="91" endcolumn="81" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="406" endline="406" begincolumn="97" endcolumn="128" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="406" endline="406" begincolumn="97" endcolumn="128" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="407" endline="407" begincolumn="49" endcolumn="66" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="408" endline="408" begincolumn="49" endcolumn="64" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="409" endline="409" begincolumn="49" endcolumn="57" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="410" endline="410" begincolumn="82" endcolumn="82" rule="AvoidLiteralsInIfCondition" ruleset="Error Prone" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#avoidliteralsinifcondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="410" endline="410" begincolumn="52" endcolumn="77" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="411" endline="411" begincolumn="91" endcolumn="114" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="412" endline="412" begincolumn="65" endcolumn="96" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="412" endline="412" begincolumn="99" endcolumn="130" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="412" endline="412" begincolumn="65" endcolumn="96" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="412" endline="412" begincolumn="99" endcolumn="130" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="413" endline="413" begincolumn="49" endcolumn="66" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="414" endline="414" begincolumn="49" endcolumn="64" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="415" endline="415" begincolumn="49" endcolumn="57" rule="AccessorMethodGeneration" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener$QueryErrorListener" method="syntaxError" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration" priority="3">
+Avoid autogenerated methods to access private fields and methods of inner / outer classes
+</violation>
+<violation beginline="427" endline="427" begincolumn="30" endcolumn="47" rule="FieldDeclarationsShouldBeAtStartOfClass" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" variable="NO_ERROR" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#fielddeclarationsshouldbeatstartofclass" priority="3">
+Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+</violation>
+<violation beginline="432" endline="432" begincolumn="34" endcolumn="53" rule="LongVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" variable="FULLY_QUALIFIED_NAME" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like FULLY_QUALIFIED_NAME
+</violation>
+<violation beginline="432" endline="432" begincolumn="30" endcolumn="58" rule="FieldDeclarationsShouldBeAtStartOfClass" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" variable="FULLY_QUALIFIED_NAME" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#fielddeclarationsshouldbeatstartofclass" priority="3">
+Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+</violation>
+<violation beginline="437" endline="437" begincolumn="37" endcolumn="54" rule="LongVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" variable="INTERNAL_ERROR_MSG" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like INTERNAL_ERROR_MSG
+</violation>
+<violation beginline="437" endline="437" begincolumn="30" endcolumn="117" rule="FieldDeclarationsShouldBeAtStartOfClass" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" variable="INTERNAL_ERROR_MSG" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#fielddeclarationsshouldbeatstartofclass" priority="3">
+Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+</violation>
+<violation beginline="442" endline="442" begincolumn="17" endcolumn="58" rule="FieldDeclarationsShouldBeAtStartOfClass" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" variable="stack" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#fielddeclarationsshouldbeatstartofclass" priority="3">
+Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+</violation>
+<violation beginline="442" endline="442" begincolumn="31" endcolumn="35" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" variable="stack" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="442" endline="442" begincolumn="31" endcolumn="35" rule="ImmutableField" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" variable="stack" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#immutablefield" priority="3">
+Private field 'stack' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="447" endline="447" begincolumn="17" endcolumn="35" rule="FieldDeclarationsShouldBeAtStartOfClass" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" variable="errorRule" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#fielddeclarationsshouldbeatstartofclass" priority="3">
+Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+</violation>
+<violation beginline="447" endline="447" begincolumn="21" endcolumn="29" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" variable="errorRule" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="450" endline="450" begincolumn="1" endcolumn="3" rule="CommentSize" ruleset="Documentation" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_documentation.html#commentsize" priority="3">
+Comment is too large: Line too long
+</violation>
+<violation beginline="453" endline="453" begincolumn="23" endcolumn="91" rule="FieldDeclarationsShouldBeAtStartOfClass" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" variable="startPositions" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#fielddeclarationsshouldbeatstartofclass" priority="3">
+Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+</violation>
+<violation beginline="453" endline="453" begincolumn="44" endcolumn="57" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" variable="startPositions" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="453" endline="453" begincolumn="23" endcolumn="42" rule="UseConcurrentHashMap" ruleset="Multithreading" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_multithreading.html#useconcurrenthashmap" priority="3">
+If you run in Java5 or newer and have concurrent access, you should use the ConcurrentHashMap implementation
+</violation>
+<violation beginline="456" endline="456" begincolumn="1" endcolumn="3" rule="CommentSize" ruleset="Documentation" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_documentation.html#commentsize" priority="3">
+Comment is too large: Line too long
+</violation>
+<violation beginline="459" endline="459" begincolumn="23" endcolumn="89" rule="FieldDeclarationsShouldBeAtStartOfClass" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" variable="endPositions" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#fielddeclarationsshouldbeatstartofclass" priority="3">
+Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+</violation>
+<violation beginline="459" endline="459" begincolumn="44" endcolumn="55" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" variable="endPositions" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="459" endline="459" begincolumn="23" endcolumn="42" rule="UseConcurrentHashMap" ruleset="Multithreading" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_multithreading.html#useconcurrenthashmap" priority="3">
+If you run in Java5 or newer and have concurrent access, you should use the ConcurrentHashMap implementation
+</violation>
+<violation beginline="464" endline="464" begincolumn="23" endcolumn="66" rule="FieldDeclarationsShouldBeAtStartOfClass" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" variable="errors" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#fielddeclarationsshouldbeatstartofclass" priority="3">
+Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+</violation>
+<violation beginline="464" endline="464" begincolumn="35" endcolumn="40" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" variable="errors" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="467" endline="467" begincolumn="1" endcolumn="3" rule="CommentSize" ruleset="Documentation" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_documentation.html#commentsize" priority="3">
+Comment is too large: Line too long
+</violation>
+<violation beginline="469" endline="469" begincolumn="23" endcolumn="82" rule="FieldDeclarationsShouldBeAtStartOfClass" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" variable="errorListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#fielddeclarationsshouldbeatstartofclass" priority="3">
+Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+</violation>
+<violation beginline="474" endline="474" begincolumn="17" endcolumn="54" rule="FieldDeclarationsShouldBeAtStartOfClass" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" variable="builder" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#fielddeclarationsshouldbeatstartofclass" priority="3">
+Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+</violation>
+<violation beginline="474" endline="474" begincolumn="28" endcolumn="34" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" variable="builder" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="474" endline="474" begincolumn="28" endcolumn="34" rule="ImmutableField" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" variable="builder" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#immutablefield" priority="3">
+Private field 'builder' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="477" endline="477" begincolumn="1" endcolumn="3" rule="CommentSize" ruleset="Documentation" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_documentation.html#commentsize" priority="3">
+Comment is too large: Line too long
+</violation>
+<violation beginline="479" endline="479" begincolumn="17" endcolumn="46" rule="FieldDeclarationsShouldBeAtStartOfClass" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" variable="environment" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#fielddeclarationsshouldbeatstartofclass" priority="3">
+Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+</violation>
+<violation beginline="479" endline="479" begincolumn="35" endcolumn="45" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" variable="environment" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="479" endline="479" begincolumn="35" endcolumn="45" rule="ImmutableField" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" variable="environment" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#immutablefield" priority="3">
+Private field 'environment' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="487" endline="489" begincolumn="16" endcolumn="9" rule="CallSuperInConstructor" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#callsuperinconstructor" priority="3">
+It is a good practice to call super() in a constructor
+</violation>
+<violation beginline="487" endline="487" begincolumn="35" endcolumn="63" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="AstBuilderListener" variable="environment" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'environment' is not assigned and could be declared final
+</violation>
+<violation beginline="538" endline="540" begincolumn="19" endcolumn="17" rule="IdenticalCatchBranches" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="pop" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#identicalcatchbranches" priority="3">
+'catch' branch identical to 'EmptyStackException' branch
+</violation>
+<violation beginline="553" endline="555" begincolumn="19" endcolumn="17" rule="IdenticalCatchBranches" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="popString" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#identicalcatchbranches" priority="3">
+'catch' branch identical to 'EmptyStackException' branch
+</violation>
+<violation beginline="568" endline="570" begincolumn="19" endcolumn="17" rule="IdenticalCatchBranches" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="popVariableDeclaration" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#identicalcatchbranches" priority="3">
+'catch' branch identical to 'EmptyStackException' branch
+</violation>
+<violation beginline="583" endline="585" begincolumn="19" endcolumn="17" rule="IdenticalCatchBranches" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="popTypeLiteral" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#identicalcatchbranches" priority="3">
+'catch' branch identical to 'EmptyStackException' branch
+</violation>
+<violation beginline="598" endline="600" begincolumn="19" endcolumn="17" rule="IdenticalCatchBranches" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="popArgs" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#identicalcatchbranches" priority="3">
+'catch' branch identical to 'EmptyStackException' branch
+</violation>
+<violation beginline="609" endline="609" begincolumn="27" endcolumn="36" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="push" variable="obj" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'obj' is not assigned and could be declared final
+</violation>
+<violation beginline="619" endline="619" begincolumn="32" endcolumn="42" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="pushError" variable="error" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'error' is not assigned and could be declared final
+</violation>
+<violation beginline="625" endline="625" begincolumn="33" endcolumn="50" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitIntType" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="626" endline="626" begincolumn="69" endcolumn="85" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitIntType" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+Unnecessary use of fully qualified name 'java.lang.Boolean' due to existing implicit import 'java.lang.*'
+</violation>
+<violation beginline="628" endline="628" begincolumn="65" endcolumn="89" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitIntType" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="629" endline="629" begincolumn="63" endcolumn="85" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitIntType" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="635" endline="635" begincolumn="34" endcolumn="52" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitFalseLit" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="638" endline="638" begincolumn="68" endcolumn="92" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitFalseLit" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="639" endline="639" begincolumn="66" endcolumn="88" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitFalseLit" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="645" endline="645" begincolumn="34" endcolumn="52" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitRealType" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="648" endline="648" begincolumn="65" endcolumn="89" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitRealType" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="649" endline="649" begincolumn="63" endcolumn="85" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitRealType" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="655" endline="655" begincolumn="33" endcolumn="50" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitTrueLit" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="658" endline="658" begincolumn="68" endcolumn="92" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitTrueLit" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="659" endline="659" begincolumn="66" endcolumn="88" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitTrueLit" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="665" endline="665" begincolumn="33" endcolumn="50" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitSeqType" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="667" endline="667" begincolumn="45" endcolumn="65" rule="LongVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitSeqType" variable="collectionTypeLiteral" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like collectionTypeLiteral
+</violation>
+<violation beginline="670" endline="670" begincolumn="75" endcolumn="99" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitSeqType" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="671" endline="671" begincolumn="73" endcolumn="95" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitSeqType" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="677" endline="677" begincolumn="33" endcolumn="50" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitSetType" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="679" endline="679" begincolumn="45" endcolumn="65" rule="LongVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitSetType" variable="collectionTypeLiteral" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like collectionTypeLiteral
+</violation>
+<violation beginline="682" endline="682" begincolumn="75" endcolumn="99" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitSetType" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="683" endline="683" begincolumn="73" endcolumn="95" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitSetType" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="689" endline="689" begincolumn="29" endcolumn="42" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitNot" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="692" endline="692" begincolumn="65" endcolumn="89" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitNot" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="693" endline="693" begincolumn="63" endcolumn="85" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitNot" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="699" endline="699" begincolumn="35" endcolumn="54" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitStringLit" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="701" endline="701" begincolumn="75" endcolumn="110" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitStringLit" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="701" endline="701" begincolumn="93" endcolumn="105" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitStringLit" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="703" endline="703" begincolumn="67" endcolumn="91" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitStringLit" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="704" endline="704" begincolumn="65" endcolumn="87" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitStringLit" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="710" endline="710" begincolumn="33" endcolumn="50" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitRealLit" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="713" endline="713" begincolumn="65" endcolumn="89" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitRealLit" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="714" endline="714" begincolumn="63" endcolumn="85" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitRealLit" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="720" endline="720" begincolumn="33" endcolumn="50" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitStrType" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="721" endline="721" begincolumn="69" endcolumn="84" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitStrType" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+Unnecessary use of fully qualified name 'java.lang.String' due to existing implicit import 'java.lang.*'
+</violation>
+<violation beginline="723" endline="723" begincolumn="65" endcolumn="89" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitStrType" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="724" endline="724" begincolumn="63" endcolumn="85" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitStrType" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="730" endline="730" begincolumn="28" endcolumn="40" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitOr" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="735" endline="735" begincolumn="29" endcolumn="42" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitXor" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="740" endline="740" begincolumn="33" endcolumn="50" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitImplies" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="745" endline="745" begincolumn="37" endcolumn="58" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitBooleanType" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="746" endline="746" begincolumn="69" endcolumn="85" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitBooleanType" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+Unnecessary use of fully qualified name 'java.lang.Boolean' due to existing implicit import 'java.lang.*'
+</violation>
+<violation beginline="748" endline="748" begincolumn="65" endcolumn="89" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitBooleanType" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="749" endline="749" begincolumn="63" endcolumn="85" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitBooleanType" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="755" endline="755" begincolumn="36" endcolumn="56" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitIntegerLit" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="758" endline="758" begincolumn="68" endcolumn="92" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitIntegerLit" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="759" endline="759" begincolumn="66" endcolumn="88" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitIntegerLit" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="765" endline="765" begincolumn="29" endcolumn="42" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitAnd" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="770" endline="770" begincolumn="32" endcolumn="48" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitVarRef" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="773" endline="773" begincolumn="60" endcolumn="84" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitVarRef" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="774" endline="774" begincolumn="58" endcolumn="80" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitVarRef" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="780" endline="780" begincolumn="33" endcolumn="50" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitFeature" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="782" endline="782" begincolumn="53" endcolumn="110" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitFeature" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="782" endline="782" begincolumn="85" endcolumn="109" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitFeature" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="785" endline="785" begincolumn="65" endcolumn="87" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitFeature" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="798" endline="798" begincolumn="67" endcolumn="69" rule="UnusedFormalParameter" ruleset="Best Practices" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="pushBinary" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#unusedformalparameter" priority="3">
+Avoid unused method parameters such as 'ctx'.
+</violation>
+<violation beginline="798" endline="798" begincolumn="49" endcolumn="69" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="pushBinary" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="798" endline="798" begincolumn="33" endcolumn="46" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="pushBinary" variable="service" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'service' is not assigned and could be declared final
+</violation>
+<violation beginline="799" endline="799" begincolumn="17" endcolumn="38" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="pushBinary" variable="op2" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'op2' could be declared final
+</violation>
+<violation beginline="800" endline="800" begincolumn="17" endcolumn="38" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="pushBinary" variable="op1" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'op1' could be declared final
+</violation>
+<violation beginline="808" endline="808" begincolumn="1" endcolumn="3" rule="CommentSize" ruleset="Documentation" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_documentation.html#commentsize" priority="3">
+Comment is too large: Line too long
+</violation>
+<violation beginline="814" endline="814" begincolumn="37" endcolumn="58" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitServiceCall" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="815" endline="815" begincolumn="17" endcolumn="64" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitServiceCall" variable="childCount" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'childCount' could be declared final
+</violation>
+<violation beginline="815" endline="815" begincolumn="34" endcolumn="64" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitServiceCall" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="817" endline="817" begincolumn="17" endcolumn="73" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitServiceCall" variable="argc" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'argc' could be declared final
+</violation>
+<violation beginline="819" endline="821" begincolumn="25" endcolumn="39" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitServiceCall" variable="args" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'args' (lines '819'-'821').
+</violation>
+<violation beginline="819" endline="824" begincolumn="17" endcolumn="31" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitServiceCall" variable="args" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'args' (lines '819'-'824').
+</violation>
+<violation beginline="821" endline="821" begincolumn="25" endcolumn="39" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitServiceCall" variable="args" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'args' (lines '821'-'821').
+</violation>
+<violation beginline="821" endline="824" begincolumn="17" endcolumn="31" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitServiceCall" variable="args" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'args' (lines '821'-'824').
+</violation>
+<violation beginline="823" endline="823" begincolumn="17" endcolumn="81" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitServiceCall" variable="serviceName" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'serviceName' could be declared final
+</violation>
+<violation beginline="823" endline="823" begincolumn="38" endcolumn="81" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitServiceCall" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="823" endline="823" begincolumn="38" endcolumn="81" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitServiceCall" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="830" endline="830" begincolumn="29" endcolumn="42" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitMin" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="833" endline="833" begincolumn="65" endcolumn="89" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitMin" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="834" endline="834" begincolumn="63" endcolumn="85" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitMin" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="840" endline="840" begincolumn="29" endcolumn="42" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitAdd" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="841" endline="841" begincolumn="30" endcolumn="31" rule="ShortVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitAdd" variable="op" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like op
+</violation>
+<violation beginline="841" endline="841" begincolumn="35" endcolumn="59" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitAdd" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="853" endline="853" begincolumn="30" endcolumn="44" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitMult" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="854" endline="854" begincolumn="30" endcolumn="31" rule="ShortVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitMult" variable="op" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like op
+</violation>
+<violation beginline="854" endline="854" begincolumn="35" endcolumn="59" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitMult" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="866" endline="866" begincolumn="30" endcolumn="44" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitComp" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="867" endline="867" begincolumn="30" endcolumn="31" rule="ShortVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitComp" variable="op" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like op
+</violation>
+<violation beginline="867" endline="867" begincolumn="35" endcolumn="59" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitComp" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="893" endline="893" begincolumn="45" endcolumn="70" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="createModelType" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="894" endline="894" begincolumn="17" endcolumn="40" rule="AvoidFinalLocalVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="createModelType" variable="result" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#avoidfinallocalvariable" priority="3">
+Avoid using final local variables, turn them into fields
+</violation>
+<violation beginline="897" endline="901" begincolumn="25" endcolumn="72" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="createModelType" variable="nsPrefix" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'nsPrefix' (lines '897'-'901').
+</violation>
+<violation beginline="897" endline="925" begincolumn="24" endcolumn="38" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="createModelType" variable="nsPrefix" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'nsPrefix' (lines '897'-'925').
+</violation>
+<violation beginline="898" endline="902" begincolumn="25" endcolumn="68" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="createModelType" variable="name" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'name' (lines '898'-'902').
+</violation>
+<violation beginline="898" endline="905" begincolumn="25" endcolumn="68" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="createModelType" variable="name" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'name' (lines '898'-'905').
+</violation>
+<violation beginline="899" endline="899" begincolumn="21" endcolumn="51" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="createModelType" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="901" endline="901" begincolumn="36" endcolumn="72" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="createModelType" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="901" endline="901" begincolumn="36" endcolumn="72" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="createModelType" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="902" endline="902" begincolumn="32" endcolumn="68" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="createModelType" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="902" endline="902" begincolumn="32" endcolumn="68" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="createModelType" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="903" endline="903" begincolumn="32" endcolumn="88" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="createModelType" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="905" endline="905" begincolumn="32" endcolumn="68" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="createModelType" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="905" endline="905" begincolumn="32" endcolumn="68" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="createModelType" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="906" endline="906" begincolumn="32" endcolumn="78" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="createModelType" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="909" endline="909" begincolumn="25" endcolumn="72" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="createModelType" variable="segments" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'segments' could be declared final
+</violation>
+<violation beginline="916" endline="916" begincolumn="59" endcolumn="103" rule="OptimizableToArrayCall" ruleset="Performance" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="createModelType" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_performance.html#optimizabletoarraycall" priority="3">
+This call to Collection.toArray() may be optimizable
+</violation>
+<violation beginline="921" endline="921" begincolumn="60" endcolumn="84" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="createModelType" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="922" endline="922" begincolumn="58" endcolumn="80" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="createModelType" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="928" endline="928" begincolumn="1" endcolumn="3" rule="CommentSize" ruleset="Documentation" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_documentation.html#commentsize" priority="3">
+Comment is too large: Line too long
+</violation>
+<violation beginline="935" endline="935" begincolumn="62" endcolumn="82" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="callFilteredService" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="935" endline="935" begincolumn="42" endcolumn="59" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="callFilteredService" variable="serviceName" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'serviceName' is not assigned and could be declared final
+</violation>
+<violation beginline="937" endline="937" begincolumn="52" endcolumn="52" rule="AvoidLiteralsInIfCondition" ruleset="Error Prone" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="callFilteredService" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#avoidliteralsinifcondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="940" endline="940" begincolumn="33" endcolumn="53" rule="AvoidFinalLocalVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="callFilteredService" variable="type" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#avoidfinallocalvariable" priority="3">
+Avoid using final local variables, turn them into fields
+</violation>
+<violation beginline="946" endline="946" begincolumn="33" endcolumn="59" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="callFilteredService" variable="receiver" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'receiver' could be declared final
+</violation>
+<violation beginline="950" endline="950" begincolumn="33" endcolumn="59" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="callFilteredService" variable="receiver" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'receiver' could be declared final
+</violation>
+<violation beginline="955" endline="955" begincolumn="25" endcolumn="59" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="callFilteredService" variable="type" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'type' could be declared final
+</violation>
+<violation beginline="956" endline="956" begincolumn="25" endcolumn="51" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="callFilteredService" variable="receiver" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'receiver' could be declared final
+</violation>
+<violation beginline="965" endline="965" begincolumn="1" endcolumn="3" rule="CommentSize" ruleset="Documentation" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_documentation.html#commentsize" priority="3">
+Comment is too large: Line too long
+</violation>
+<violation beginline="968" endline="968" begincolumn="34" endcolumn="52" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitEContent" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="975" endline="975" begincolumn="1" endcolumn="3" rule="CommentSize" ruleset="Documentation" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_documentation.html#commentsize" priority="3">
+Comment is too large: Line too long
+</violation>
+<violation beginline="978" endline="978" begincolumn="35" endcolumn="54" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitEAContent" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="985" endline="985" begincolumn="1" endcolumn="3" rule="CommentSize" ruleset="Documentation" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_documentation.html#commentsize" priority="3">
+Comment is too large: Line too long
+</violation>
+<violation beginline="988" endline="988" begincolumn="36" endcolumn="56" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitEContainer" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="995" endline="995" begincolumn="1" endcolumn="3" rule="CommentSize" ruleset="Documentation" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_documentation.html#commentsize" priority="3">
+Comment is too large: Line too long
+</violation>
+<violation beginline="998" endline="998" begincolumn="34" endcolumn="52" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitEInverse" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="1003" endline="1003" begincolumn="32" endcolumn="48" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitFilter" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="1010" endline="1010" begincolumn="1" endcolumn="3" rule="CommentSize" ruleset="Documentation" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_documentation.html#commentsize" priority="3">
+Comment is too large: Line too long
+</violation>
+<violation beginline="1013" endline="1013" begincolumn="28" endcolumn="40" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitAs" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="1020" endline="1020" begincolumn="1" endcolumn="3" rule="CommentSize" ruleset="Documentation" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_documentation.html#commentsize" priority="3">
+Comment is too large: Line too long
+</violation>
+<violation beginline="1023" endline="1023" begincolumn="32" endcolumn="48" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitAsType" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="1028" endline="1028" begincolumn="37" endcolumn="58" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitCallService" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="1033" endline="1033" begincolumn="25" endcolumn="84" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitCallService" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="1033" endline="1033" begincolumn="57" endcolumn="83" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitCallService" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="1034" endline="1034" begincolumn="71" endcolumn="93" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitCallService" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="1040" endline="1040" begincolumn="31" endcolumn="46" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitApply" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="1044" endline="1044" begincolumn="17" endcolumn="76" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitApply" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="1044" endline="1044" begincolumn="49" endcolumn="75" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitApply" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="1045" endline="1045" begincolumn="63" endcolumn="85" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitApply" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="1050" endline="1050" begincolumn="32" endcolumn="48" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitIsType" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="1055" endline="1055" begincolumn="32" endcolumn="48" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitIsKind" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="1062" endline="1062" begincolumn="1" endcolumn="3" rule="CommentSize" ruleset="Documentation" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_documentation.html#commentsize" priority="3">
+Comment is too large: Line too long
+</violation>
+<violation beginline="1065" endline="1065" begincolumn="44" endcolumn="72" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitVariableDefinition" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="1069" endline="1069" begincolumn="51" endcolumn="69" rule="LongVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitVariableDefinition" variable="variableDeclaration" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like variableDeclaration
+</violation>
+<violation beginline="1069" endline="1069" begincolumn="25" endcolumn="69" rule="AvoidFinalLocalVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitVariableDefinition" variable="variableDeclaration" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#avoidfinallocalvariable" priority="3">
+Avoid using final local variables, turn them into fields
+</violation>
+<violation beginline="1071" endline="1071" begincolumn="42" endcolumn="59" rule="LongVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitVariableDefinition" variable="variableExpression" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like variableExpression
+</violation>
+<violation beginline="1072" endline="1072" begincolumn="52" endcolumn="52" rule="AvoidLiteralsInIfCondition" ruleset="Error Prone" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitVariableDefinition" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#avoidliteralsinifcondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="1073" endline="1074" begincolumn="55" endcolumn="125" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitVariableDefinition" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="1073" endline="1073" begincolumn="83" endcolumn="107" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitVariableDefinition" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="1075" endline="1076" begincolumn="33" endcolumn="119" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitVariableDefinition" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="1075" endline="1076" begincolumn="33" endcolumn="119" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitVariableDefinition" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="1075" endline="1076" begincolumn="71" endcolumn="118" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitVariableDefinition" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="1075" endline="1076" begincolumn="71" endcolumn="118" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitVariableDefinition" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="1078" endline="1079" begincolumn="55" endcolumn="67" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitVariableDefinition" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="1078" endline="1078" begincolumn="83" endcolumn="107" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitVariableDefinition" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="1080" endline="1081" begincolumn="33" endcolumn="81" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitVariableDefinition" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="1080" endline="1081" begincolumn="33" endcolumn="81" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitVariableDefinition" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="1080" endline="1081" begincolumn="71" endcolumn="80" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitVariableDefinition" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="1080" endline="1081" begincolumn="71" endcolumn="80" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitVariableDefinition" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="1083" endline="1083" begincolumn="81" endcolumn="105" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitVariableDefinition" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="1092" endline="1092" begincolumn="1" endcolumn="3" rule="CommentSize" ruleset="Documentation" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_documentation.html#commentsize" priority="3">
+Comment is too large: Line too long
+</violation>
+<violation beginline="1095" endline="1095" begincolumn="39" endcolumn="62" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitIterationCall" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="1097" endline="1097" begincolumn="44" endcolumn="68" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitIterationCall" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="1099" endline="1099" begincolumn="17" endcolumn="50" rule="AvoidFinalLocalVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitIterationCall" variable="iterator" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#avoidfinallocalvariable" priority="3">
+Avoid using final local variables, turn them into fields
+</violation>
+<violation beginline="1106" endline="1106" begincolumn="40" endcolumn="63" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitIterationCall" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="1112" endline="1112" begincolumn="1" endcolumn="3" rule="CommentSize" ruleset="Documentation" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_documentation.html#commentsize" priority="3">
+Comment is too large: Line too long
+</violation>
+<violation beginline="1115" endline="1115" begincolumn="45" endcolumn="74" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitEnumOrClassifierLit" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="1117" endline="1117" begincolumn="25" endcolumn="44" rule="AvoidFinalLocalVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitEnumOrClassifierLit" variable="toPush" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#avoidfinallocalvariable" priority="3">
+Avoid using final local variables, turn them into fields
+</violation>
+<violation beginline="1119" endline="1119" begincolumn="25" endcolumn="70" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitEnumOrClassifierLit" variable="literalName" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'literalName' could be declared final
+</violation>
+<violation beginline="1119" endline="1119" begincolumn="46" endcolumn="70" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitEnumOrClassifierLit" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="1120" endline="1120" begincolumn="64" endcolumn="64" rule="AvoidLiteralsInIfCondition" ruleset="Error Prone" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitEnumOrClassifierLit" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#avoidliteralsinifcondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="1120" endline="1120" begincolumn="29" endcolumn="59" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitEnumOrClassifierLit" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="1130" endline="1141" begincolumn="1" endcolumn="3" rule="CommentSize" ruleset="Documentation" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_documentation.html#commentsize" priority="3">
+Comment is too large: Too many lines
+</violation>
+<violation beginline="1131" endline="1131" begincolumn="1" endcolumn="3" rule="CommentSize" ruleset="Documentation" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_documentation.html#commentsize" priority="3">
+Comment is too large: Line too long
+</violation>
+<violation beginline="1132" endline="1132" begincolumn="1" endcolumn="3" rule="CommentSize" ruleset="Documentation" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_documentation.html#commentsize" priority="3">
+Comment is too large: Line too long
+</violation>
+<violation beginline="1137" endline="1137" begincolumn="1" endcolumn="3" rule="CommentSize" ruleset="Documentation" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_documentation.html#commentsize" priority="3">
+Comment is too large: Line too long
+</violation>
+<violation beginline="1138" endline="1138" begincolumn="1" endcolumn="3" rule="CommentSize" ruleset="Documentation" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_documentation.html#commentsize" priority="3">
+Comment is too large: Line too long
+</violation>
+<violation beginline="1139" endline="1139" begincolumn="1" endcolumn="3" rule="CommentSize" ruleset="Documentation" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_documentation.html#commentsize" priority="3">
+Comment is too large: Line too long
+</violation>
+<violation beginline="1142" endline="1142" begincolumn="59" endcolumn="88" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="twoSegmentEnumOrClassifierLiteral" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="1142" endline="1142" begincolumn="91" endcolumn="108" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="twoSegmentEnumOrClassifierLiteral" variable="literalName" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'literalName' is not assigned and could be declared final
+</violation>
+<violation beginline="1143" endline="1143" begincolumn="17" endcolumn="36" rule="AvoidFinalLocalVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="twoSegmentEnumOrClassifierLiteral" variable="toPush" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#avoidfinallocalvariable" priority="3">
+Avoid using final local variables, turn them into fields
+</violation>
+<violation beginline="1145" endline="1145" begincolumn="41" endcolumn="77" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="twoSegmentEnumOrClassifierLiteral" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="1145" endline="1145" begincolumn="41" endcolumn="77" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="twoSegmentEnumOrClassifierLiteral" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="1146" endline="1146" begincolumn="46" endcolumn="116" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="twoSegmentEnumOrClassifierLiteral" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="1147" endline="1156" begincolumn="17" endcolumn="17" rule="ConfusingTernary" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="twoSegmentEnumOrClassifierLiteral" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#confusingternary" priority="3">
+Avoid if (x != y) ..; else ..;
+</violation>
+<violation beginline="1150" endline="1150" begincolumn="56" endcolumn="119" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="twoSegmentEnumOrClassifierLiteral" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="1151" endline="1155" begincolumn="25" endcolumn="25" rule="ConfusingTernary" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="twoSegmentEnumOrClassifierLiteral" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#confusingternary" priority="3">
+Avoid if (x != y) ..; else ..;
+</violation>
+<violation beginline="1157" endline="1157" begincolumn="60" endcolumn="84" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="twoSegmentEnumOrClassifierLiteral" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="1158" endline="1158" begincolumn="58" endcolumn="80" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="twoSegmentEnumOrClassifierLiteral" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="1163" endline="1173" begincolumn="1" endcolumn="3" rule="CommentSize" ruleset="Documentation" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_documentation.html#commentsize" priority="3">
+Comment is too large: Too many lines
+</violation>
+<violation beginline="1164" endline="1164" begincolumn="1" endcolumn="3" rule="CommentSize" ruleset="Documentation" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_documentation.html#commentsize" priority="3">
+Comment is too large: Line too long
+</violation>
+<violation beginline="1171" endline="1171" begincolumn="1" endcolumn="3" rule="CommentSize" ruleset="Documentation" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_documentation.html#commentsize" priority="3">
+Comment is too large: Line too long
+</violation>
+<violation beginline="1174" endline="1174" begincolumn="49" endcolumn="78" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="threeSegmentEnumLiteral" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="1174" endline="1174" begincolumn="81" endcolumn="98" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="threeSegmentEnumLiteral" variable="literalName" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'literalName' is not assigned and could be declared final
+</violation>
+<violation beginline="1175" endline="1175" begincolumn="17" endcolumn="36" rule="AvoidFinalLocalVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="threeSegmentEnumLiteral" variable="toPush" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#avoidfinallocalvariable" priority="3">
+Avoid using final local variables, turn them into fields
+</violation>
+<violation beginline="1177" endline="1177" begincolumn="41" endcolumn="77" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="threeSegmentEnumLiteral" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="1177" endline="1177" begincolumn="41" endcolumn="77" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="threeSegmentEnumLiteral" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="1178" endline="1178" begincolumn="41" endcolumn="77" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="threeSegmentEnumLiteral" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="1178" endline="1178" begincolumn="41" endcolumn="77" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="threeSegmentEnumLiteral" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="1179" endline="1180" begincolumn="46" endcolumn="44" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="threeSegmentEnumLiteral" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="1181" endline="1185" begincolumn="17" endcolumn="17" rule="ConfusingTernary" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="threeSegmentEnumLiteral" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#confusingternary" priority="3">
+Avoid if (x != y) ..; else ..;
+</violation>
+<violation beginline="1186" endline="1186" begincolumn="60" endcolumn="84" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="threeSegmentEnumLiteral" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="1187" endline="1187" begincolumn="58" endcolumn="80" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="threeSegmentEnumLiteral" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="1204" endline="1204" begincolumn="1" endcolumn="3" rule="CommentSize" ruleset="Documentation" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_documentation.html#commentsize" priority="3">
+Comment is too large: Line too long
+</violation>
+<violation beginline="1207" endline="1207" begincolumn="33" endcolumn="50" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitNullLit" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="1210" endline="1210" begincolumn="65" endcolumn="89" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitNullLit" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="1211" endline="1211" begincolumn="63" endcolumn="85" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitNullLit" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="1219" endline="1219" begincolumn="1" endcolumn="3" rule="CommentSize" ruleset="Documentation" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_documentation.html#commentsize" priority="3">
+Comment is too large: Line too long
+</violation>
+<violation beginline="1222" endline="1222" begincolumn="32" endcolumn="48" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitSetLit" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="1225" endline="1225" begincolumn="68" endcolumn="92" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitSetLit" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="1226" endline="1226" begincolumn="66" endcolumn="88" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitSetLit" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="1234" endline="1234" begincolumn="1" endcolumn="3" rule="CommentSize" ruleset="Documentation" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_documentation.html#commentsize" priority="3">
+Comment is too large: Line too long
+</violation>
+<violation beginline="1237" endline="1237" begincolumn="40" endcolumn="64" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitExplicitSetLit" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="1240" endline="1240" begincolumn="68" endcolumn="92" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitExplicitSetLit" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="1241" endline="1241" begincolumn="66" endcolumn="88" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitExplicitSetLit" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="1246" endline="1257" begincolumn="1" endcolumn="3" rule="CommentSize" ruleset="Documentation" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_documentation.html#commentsize" priority="3">
+Comment is too large: Too many lines
+</violation>
+<violation beginline="1247" endline="1247" begincolumn="1" endcolumn="3" rule="CommentSize" ruleset="Documentation" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_documentation.html#commentsize" priority="3">
+Comment is too large: Line too long
+</violation>
+<violation beginline="1248" endline="1248" begincolumn="1" endcolumn="3" rule="CommentSize" ruleset="Documentation" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_documentation.html#commentsize" priority="3">
+Comment is too large: Line too long
+</violation>
+<violation beginline="1252" endline="1252" begincolumn="1" endcolumn="3" rule="CommentSize" ruleset="Documentation" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_documentation.html#commentsize" priority="3">
+Comment is too large: Line too long
+</violation>
+<violation beginline="1254" endline="1254" begincolumn="1" endcolumn="3" rule="CommentSize" ruleset="Documentation" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_documentation.html#commentsize" priority="3">
+Comment is too large: Line too long
+</violation>
+<violation beginline="1255" endline="1255" begincolumn="1" endcolumn="3" rule="CommentSize" ruleset="Documentation" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_documentation.html#commentsize" priority="3">
+Comment is too large: Line too long
+</violation>
+<violation beginline="1258" endline="1258" begincolumn="49" endcolumn="66" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="getExpressions" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="1259" endline="1259" begincolumn="44" endcolumn="74" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="getExpressions" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="1260" endline="1263" begincolumn="25" endcolumn="46" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="getExpressions" variable="expressions" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'expressions' (lines '1,260'-'1,263').
+</violation>
+<violation beginline="1263" endline="1263" begincolumn="25" endcolumn="46" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="getExpressions" variable="expressions" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'expressions' (lines '1,263'-'1,263').
+</violation>
+<violation beginline="1272" endline="1272" begincolumn="1" endcolumn="3" rule="CommentSize" ruleset="Documentation" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_documentation.html#commentsize" priority="3">
+Comment is too large: Line too long
+</violation>
+<violation beginline="1275" endline="1275" begincolumn="32" endcolumn="48" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitSeqLit" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="1276" endline="1276" begincolumn="50" endcolumn="68" rule="LongVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitSeqLit" variable="sequenceInExtension" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like sequenceInExtension
+</violation>
+<violation beginline="1279" endline="1279" begincolumn="73" endcolumn="97" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitSeqLit" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="1280" endline="1280" begincolumn="71" endcolumn="93" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitSeqLit" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="1288" endline="1288" begincolumn="1" endcolumn="3" rule="CommentSize" ruleset="Documentation" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_documentation.html#commentsize" priority="3">
+Comment is too large: Line too long
+</violation>
+<violation beginline="1291" endline="1291" begincolumn="40" endcolumn="64" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitExplicitSeqLit" variable="ctx" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ctx' is not assigned and could be declared final
+</violation>
+<violation beginline="1292" endline="1292" begincolumn="50" endcolumn="68" rule="LongVariable" ruleset="Code Style" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitExplicitSeqLit" variable="sequenceInExtension" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like sequenceInExtension
+</violation>
+<violation beginline="1295" endline="1295" begincolumn="73" endcolumn="97" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitExplicitSeqLit" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+<violation beginline="1296" endline="1296" begincolumn="71" endcolumn="93" rule="LawOfDemeter" ruleset="Design" package="org.eclipse.acceleo.query.parser" class="AstBuilderListener" method="exitExplicitSeqLit" externalInfoUrl="https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (static property access)
+</violation>
+</file>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+</pmd>

@@ -1,0 +1,6 @@
+0,1,2,3,4,fileName,changeId,patchId,patchRef
+1.0,0.0,0.0,0.0,0.0,query/plugins/org.eclipse.acceleo.query/src/org/eclipse/acceleo/query/delegates/AQLSettingDelegate.java,I0423078bc4de01ee268e86d035bb5cc703c9e324,051e2f8c13515aa5e65634a3cd718576755de509,refs/changes/20/70120/1
+0.0,0.0,0.0,1.0,0.0,plugins/org.eclipse.acceleo.equinox.launcher/src/org/eclipse/acceleo/equinox/internal/EMFCodeGenRunner.java,I85a4749b6ccf921d6f62a6357a36cd17dbebae5d,7fd9718d53df1700476506226d05bd6fac89a29a,refs/changes/27/54427/25
+0.0,1.0,0.0,0.0,0.0,query/tests/org.eclipse.acceleo.query.tests/src/org/eclipse/acceleo/query/services/tests/CollectionServicesAstValidationTest.java,I57176e513bc5ccf0fbd912cced26b512d055d776,91653c2100299f106ccdf9f897ecb6eb589fb0e2,refs/changes/01/65001/2
+0.0,0.0,0.0,0.0,1.0,query/plugins/org.eclipse.acceleo.query/src/org/eclipse/acceleo/query/runtime/impl/EvaluationServices.java,Id4fd7850eba4e8d0c0c1b3e7d385aa04d9427754,b6e14b5404d3542902341ea823e774548faaf5c8,refs/changes/76/57176/1
+0.0,0.0,1.0,0.0,0.0,query/plugins/org.eclipse.acceleo.query/src/org/eclipse/acceleo/query/parser/AstBuilderListener.java,I7f5d0fbae8224b4be793db159fde8fe3448fee7e,dab96a60f22b0957adf0e44fe9ab4df4db2c0f5d,refs/changes/98/44098/3

@@ -377,5 +377,6 @@ STYLE_CONVENTIONS = list([
     'ForLoopsMustUseBraces',
     'IfElseStmtsMustUseBraces',
     'IfStmtsMustUseBraces',
-    'WhileLoopsMustUseBraces'
+    'WhileLoopsMustUseBraces',
+    'IdenticalCatchBranches' # added by nzaugg: new with PMD 6.4.0
 ])

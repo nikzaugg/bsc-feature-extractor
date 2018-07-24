@@ -1,8 +1,10 @@
 import os
 import pandas as pd
+import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
+
 
 def generate():
     inputData = dir_path+'/data/dataset.csv'
@@ -24,11 +26,15 @@ def generate():
     features = tfidf.fit_transform(df.changeId).toarray()
     print(features.shape)
     doc = pd.DataFrame(data=features, index=index_to_changeid.values())
-    
+
     return doc
 
 
 def extract(data, row):
     data_row = data.loc[[row[4]]]
-    data_row = data_row.values.tolist()
-    return data_row
+    values = data_row.values.tolist()
+    values = values[0]
+    keys = np.arange(len(values))
+
+    res = dict(zip(keys, values))
+    return res

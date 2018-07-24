@@ -16,8 +16,6 @@ def parse(pathToXML, outDir):
 
         rows = list()
 
-        fileName = root[0].get('name')
-
         # line, severity, message, source
         for violation in root[0]:
             row = list()
@@ -65,8 +63,7 @@ def parse(pathToXML, outDir):
                 'className',
                 'methodName',
                 'variable',
-                'priority',
-                'filePath'
+                'priority'
             ]
             writer.writerow(headers)
             for row in rows:
@@ -83,8 +80,7 @@ def parse(pathToXML, outDir):
                     row[8],
                     row[9],
                     row[10],
-                    row[11],
-                    fileName
+                    row[11]
                 ])
         print(">>> PMD Report parsed!")
         
@@ -98,9 +94,7 @@ def parse(pathToXML, outDir):
         
         with open(csvAggregatedReport, 'w', newline='') as outfile:
             headerRow = list(dataDict)
-            headerRow.append('FilePath')
             valueRow = list(dataDict.values())
-            valueRow.append(fileName)
             writer = csv.writer(outfile)
             writer.writerow(headerRow)
             writer.writerow(valueRow)
@@ -153,9 +147,6 @@ def diff(currentReportDir, previousReportDir):
         # if key from right is not in left
         if key not in left.keys():
             delta[key] = right[key]
-
-    delta["FilePath"] = right["FilePath"]
-    # print(len(delta), delta)
 
     print(">>> PMD Diff generated!")
     return delta

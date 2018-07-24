@@ -13,28 +13,34 @@ from change_metrics import extractor as metrics_change
 from nlp_metrics import extractor as metrics_nlp
 from scc_metrics import extractor as metrics_scc
 
+import dataSetWriter as writer
+
 
 def main():
     """ Main entry point to compute features for the training-set """
 
-    ## ******************** ##
-    ## DATA CREATED BEFORE  ##
-    ## ******************** ## 
+    CODE_METRICS = True
+    CHECKSTYLE_METRICS = True
+    PMD_METRICS = True
+    CK_METRICS = True
+    CHANGE_METRICS = True
+    NLP_METRICS = True
+    SCC_METRICS = True
 
     #######################################################
-    # 2) load tf-idf matrix of considered commit-messages #
+    # 1) load tf-idf matrix of considered commit-messages #
     #######################################################
     nlp_data = metrics_nlp.generate()
 
     ##################################################
-    # 3) load Change-Metrics of each considered file #
+    # 2) load Change-Metrics of each considered file #
     ##################################################
     changeData = metrics_change.loadData('acceleo')
 
     ##############################
-    # 4) load preprocess-dataset #
+    # 3) load preprocess-dataset #
     ##############################
-    preprocess_data = pd.read_csv('preprocess_dataset/test_dataset.csv')
+    preprocess_data = pd.read_csv('preprocess_dataset/dataset_big.csv')
 
     ############################
     # COMPUTE METRICS FOR FILE #
@@ -42,51 +48,42 @@ def main():
     # list() of list() of features
     feature_rows = list()
 
+    code_metrics_features = list()
+    checkstyle_metrics_features = list()
+    pmd_metrics_features = list()
+    ck_metrics_features = list()
+    change_metrics_features = list()
+    nlp_metrics_features = list()
+    scc_metrics_features = list()
+    labels = list()
+
     # for each file in preprocess-dataset
     for row in preprocess_data.itertuples():
-        feature_row = list()
-        code_metrics = dict()
-        checkstyle_metrics = dict()
-        pmd_metrics = dict()
-        ck_metrics = dict()
-        change_metrics = dict()
-        nlp_metrics = dict()
-        scc_metrics = dict()
-
-        # list() code-metrics
-        # list() checkstyle-metrics
-        # list() pmd-metrics
-        # list() change-metrics
-        # list() tf-idf features
-        # list() ck-metrics
-        # list() scc-metrics
-        # list() labels
-
         ##################################################################
-        # 5) fetch patch of file & fetch patch of previous patchset/base #
+        # 4) fetch patch of file & fetch patch of previous patchset/base #
         ##################################################################
         fetch_url = row[1]
         project_name = row[2]
+        change_id = row[4]
         revision_nr = row[5]
-        commit_id = row[6]
         ref = row[7]
         file_path = row[9]
         repo_dir = row[10]
 
-        repo_current_loc = repo_dir + '/current-' + project_name + '/'
-        repo_previous_loc = repo_dir + '/previous-' + project_name + '/'
+        REPO_CURRENT_LOC = repo_dir + '/current-' + project_name + '/'
+        REPO_PREVIOUS_LOC = repo_dir + '/previous-' + project_name + '/'
 
-        fname_current = repo_current_loc + file_path
-        fname_previous = repo_previous_loc + file_path
+        FILE_CURRENT = REPO_CURRENT_LOC + file_path
+        FILE_PREVIOUS = REPO_PREVIOUS_LOC + file_path
 
-        f_current_exists = False
-        f_previous_exists = False
+        CURRENT_FILE_EXISTS = False
+        PREVIOUS_FILE_EXISTS = False
 
         # CHECKOUT CURRENT VERSION OF FILE
         print("<=========================== CURRENT ==============================>")
-        checkout_ref(repo_current_loc, ref, fetch_url)
-        f_current_exists = os.path.isfile(fname_current)
-        print("<============= FILE EXISTS ============>", f_current_exists)
+        checkout_ref(REPO_CURRENT_LOC, ref, fetch_url)
+        CURRENT_FILE_EXISTS = os.path.isfile(FILE_CURRENT)
+        print("FILE EXISTS =>", CURRENT_FILE_EXISTS)
 
         # CHECKOUT PREVIOUS VERSION OF FILE
         patch_nr = ref.split("/")[-1]
@@ -94,9 +91,10 @@ def main():
         if int(patch_nr) == 1:
             print("<=========================== PREVIOUS ==============================>")
             checkout_prev_file_version(
-                repo_previous_loc, file_path, revision_nr)
-            f_previous_exists = os.path.isfile(fname_previous)
-            print("<============= FILE EXISTS ============>", f_previous_exists)
+                REPO_PREVIOUS_LOC, file_path, revision_nr)
+            PREVIOUS_FILE_EXISTS = os.path.isfile(FILE_PREVIOUS)
+            print("FILE EXISTS =>", PREVIOUS_FILE_EXISTS)
+            print("\n")
         # If current patch is not patch nr. 1
         else:
             previous_ref = int(patch_nr) - 1
@@ -106,85 +104,155 @@ def main():
                 x = x+s+'/'
             x = x + str(previous_ref)
             print("<=========================== PREVIOUS ==============================>")
-            checkout_ref(repo_previous_loc, x, fetch_url)
-            f_previous_exists = os.path.isfile(fname_previous)
-            print("<============= FILE EXISTS ============>", f_previous_exists)
+            checkout_ref(REPO_PREVIOUS_LOC, x, fetch_url)
+            PREVIOUS_FILE_EXISTS = os.path.isfile(FILE_PREVIOUS)
+            print("FILE EXISTS =>", PREVIOUS_FILE_EXISTS)
+            print("\n")
 
         ############################################
-        # 6) compute Code-Metrics -> save features #
+        # 5) compute Code-Metrics -> save features #
         ############################################
-        # code_metrics = metrics_code.extract(fname_current, fname_previous, f_previous_exists)
+        if CODE_METRICS:
+            code_metrics = metrics_code.extract(
+                FILE_CURRENT, FILE_PREVIOUS, PREVIOUS_FILE_EXISTS)
+            code_metrics[0]['fileName'] = file_path
+            code_metrics[0]['changeId'] = change_id
+            code_metrics[0]['patchId'] = revision_nr
+            code_metrics[0]['patchRef'] = ref
+            code_metrics_features.append(code_metrics[0])
 
-        ##################################################
-        # 7) compute checkstyle-metrics -> save features #
-        ##################################################
-        # checkstyle_metrics = metrics_checkstyle.extract(fname_current, fname_previous, f_previous_exists)
+        # ##################################################
+        # # 6) compute checkstyle-metrics -> save features #
+        # ##################################################
+        if CHECKSTYLE_METRICS:
+            checkstyle_metrics = metrics_checkstyle.extract(
+                FILE_CURRENT, FILE_PREVIOUS, PREVIOUS_FILE_EXISTS)
+            checkstyle_metrics[0]['fileName'] = file_path
+            checkstyle_metrics[0]['changeId'] = change_id
+            checkstyle_metrics[0]['patchId'] = revision_nr
+            checkstyle_metrics[0]['patchRef'] = ref
+            checkstyle_metrics_features.append(checkstyle_metrics[0])
 
-        ###########################################
-        # 8) compute pmd-metrics -> save features #
-        ###########################################
-        # pmd_metrics = metrics_pmd.extract(fname_current, fname_previous, f_previous_exists)
+        # ###########################################
+        # # 7) compute pmd-metrics -> save features #
+        # ###########################################
+        if PMD_METRICS:
+            pmd_metrics = metrics_pmd.extract(
+                FILE_CURRENT, FILE_PREVIOUS, PREVIOUS_FILE_EXISTS)
+            pmd_metrics[0]['fileName'] = file_path
+            pmd_metrics[0]['changeId'] = change_id
+            pmd_metrics[0]['patchId'] = revision_nr
+            pmd_metrics[0]['patchRef'] = ref
+            pmd_metrics_features.append(pmd_metrics[0])
 
-        ###########################################
-        # 9) compute ck-metrics -> save features #
-        ###########################################
-        # ck_metrics = metrics_ck.extract(fname_current, fname_previous, f_previous_exists)
+        # ###########################################
+        # # 8) compute ck-metrics -> save features #
+        # ###########################################
+        if CK_METRICS:
+            ck_metrics = metrics_ck.extract(
+                FILE_CURRENT, FILE_PREVIOUS, PREVIOUS_FILE_EXISTS)
+            ck_metrics[0]['fileName'] = file_path
+            ck_metrics[0]['changeId'] = change_id
+            ck_metrics[0]['patchId'] = revision_nr
+            ck_metrics[0]['patchRef'] = ref
+            ck_metrics_features.append(ck_metrics[0])
 
-        #############################################
-        # 10) lookup change-metrics -> save features #
-        #############################################
-        # change_metrics = metrics_change.extract(changeData, row)
+        # #############################################
+        # # 9) lookup change-metrics -> save features #
+        # #############################################
+        if CHANGE_METRICS:
+            change_metrics = metrics_change.extract(changeData, row)
+            change_metrics['fileName'] = file_path
+            change_metrics['changeId'] = change_id
+            change_metrics['patchId'] = revision_nr
+            change_metrics['patchRef'] = ref
+            change_metrics_features.append(change_metrics)
 
-        ##########################################
-        # 11) lookup tf-idf row -> save features #
-        ##########################################
-        # nlp_metrics = metrics_nlp.extract(nlp_data, row)
+        # ##########################################
+        # # 10) lookup tf-idf row -> save features #
+        # ##########################################
+        if NLP_METRICS:
+            nlp_metrics = metrics_nlp.extract(nlp_data, row)
+            nlp_metrics['fileName'] = file_path
+            nlp_metrics['changeId'] = change_id
+            nlp_metrics['patchId'] = revision_nr
+            nlp_metrics['patchRef'] = ref
+            nlp_metrics_features.append(nlp_metrics)
 
-        #####################################################
-        # 12) lookup ChangeDistiller types -> save features #
-        #####################################################
-        scc_metrics = metrics_scc.extract(fname_current, fname_previous, f_previous_exists)
+        # #####################################################
+        # # 11) lookup ChangeDistiller types -> save features #
+        # #####################################################
+        if SCC_METRICS:
+            scc_metrics = metrics_scc.extract(
+                FILE_CURRENT, FILE_PREVIOUS, PREVIOUS_FILE_EXISTS)
+            scc_metrics[0]['fileName'] = file_path
+            scc_metrics[0]['changeId'] = change_id
+            scc_metrics[0]['patchId'] = revision_nr
+            scc_metrics[0]['patchRef'] = ref
+            scc_metrics_features.append(scc_metrics[0])
 
         ###############################
-        # 13) extract labels --> save #
+        # 12) extract labels --> save #
         ###############################
+        lbls = dict()
+        ls = row[15].split(';')
+        lbls['fileName'] = file_path
+        lbls['changeId'] = change_id
+        lbls['patchId'] = revision_nr
+        lbls['patchRef'] = ref
+        lbls['labels'] = ls
 
-        #########################################
-        # 14) add each feature list to features #
-        #########################################
-        feature_row.append(code_metrics)
-        feature_row.append(checkstyle_metrics)
-        feature_row.append(pmd_metrics)
-        feature_row.append(ck_metrics)
-        feature_row.append(change_metrics)
-        feature_row.append(nlp_metrics)
-        feature_row.append(scc_metrics)
-
-        feature_rows.append(feature_row)
+        labels.append(lbls)
 
     ##############################################
-    # 15) print each feature-row into a data-set #
+    # 13) print each feature-row into a data-set #
     ##############################################
-    
+
     print(" ")
-    print(len(feature_rows))
-    print("----------------------------------------------------")
-    for entry in feature_rows:
-        print(entry[0]) # CODE_METRICS
-        print("---------")
-        print(entry[1]) # CHECKSTYLE
-        print("---------")
-        print(entry[2]) # PMD
-        print("---------")
-        print(entry[3]) # CK_METRICS
-        print("---------")
-        print(entry[4]) # CHANGE_METRICS
-        print("---------")
-        print(entry[5]) # NLP_METRICS
-        print("---------")
-        print(entry[6]) # SCC_METRICS
-    print("----------------------------------------------------")
-    print(" ")
+    if CODE_METRICS:
+        writer.writeFeatureRows(code_metrics_features, "code_metrics_diff.csv")
+    if CHECKSTYLE_METRICS:
+        writer.writeFeatureRows(
+            checkstyle_metrics_features, "checkstyle_metrics_diff.csv")
+    if PMD_METRICS:
+        writer.writeFeatureRows(pmd_metrics_features, "pmd_metrics_diff.csv")
+    if CK_METRICS:
+        writer.writeFeatureRows(ck_metrics_features, "ck_metrics_diff.csv")
+    if CHANGE_METRICS:
+        writer.writeFeatureRows(change_metrics_features, "change_metrics.csv")
+    if NLP_METRICS:
+        writer.writeFeatureRows(nlp_metrics_features, "nlp_metrics.csv")
+    if SCC_METRICS:
+        writer.writeFeatureRows(scc_metrics_features, "scc_metrics.csv")
+    writer.writeFeatureRows(labels, "labels.csv")
+
+    # for entry in feature_rows:
+    #     print("----------------------------------------------------")
+    #     print("> Code Metrics diff:")
+    #     # print(entry[0][0]) # CODE_METRICS
+    #     # print("---------")
+    #     print("> Checkstyle Metrics diff:")
+    #     # print(entry[1][0]) # CHECKSTYLE
+    #     # print("---------")
+    #     print("> PMD Metrics diff:")
+    #     # print(entry[2][0]) # PMD
+    #     # print("---------")
+    #     print("> CK Metrics diff:")
+    #     # print(entry[3][0]) # CK_METRICS
+    #     # print("---------")
+    #     print("> Change Metrics diff:")
+    #     # print(entry[4]) # CHANGE_METRICS
+    #     # print("---------")
+    #     print("> NLP Metrics:")
+    #     # print(entry[5]) # NLP_METRICS
+    #     # print("---------")
+    #     print("> SCC Metrics:")
+    #     # print(entry[6][0]) # SCC_METRICS
+    #     # print("")
+    #     print("> SCC METRICS Severities:")
+    #     # print(entry[6][1])
+    #     print("----------------------------------------------------")
+    # print(" ")
     print('> finished analyzing')
 
 

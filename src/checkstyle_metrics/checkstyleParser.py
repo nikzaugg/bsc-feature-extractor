@@ -18,8 +18,6 @@ def parse(pathToXML, outDir):
 
         rows = list()
 
-        fileName = root.findall('file')[0].get('name')
-
         # line, severity, message, source
         for error in root[0].findall('error'):
             row = list()
@@ -47,12 +45,12 @@ def parse(pathToXML, outDir):
         with open(csvReport, 'w', newline='') as outfile:
             writer = csv.writer(outfile)
             headers = ['Line', 'Column', 'Severity', 'Message',
-                       'Rule', 'Classified_Rule', 'File_Path']
+                       'Rule', 'Classified_Rule']
             writer.writerow(headers)
             for row in rows:
                 dataRows.append(row)
                 writer.writerow([
-                    row[0], row[1], row[2], row[3], row[4], row[5], fileName
+                    row[0], row[1], row[2], row[3], row[4], row[5]
                 ])
         print(">>> Checkstyle Report parsed!")
 
@@ -65,9 +63,7 @@ def parse(pathToXML, outDir):
 
         with open(csvAggregatedReport, 'w', newline='') as outfile:
             headerRow = list(dataDict)
-            headerRow.append('FilePath')
             valueRow = list(dataDict.values())
-            valueRow.append(fileName)
             writer = csv.writer(outfile)
             writer.writerow(headerRow)
             writer.writerow(valueRow)
@@ -125,9 +121,6 @@ def diff(currentReportDir, previousReportDir):
         # if key from right is not in left
         if key not in left.keys():
             delta[key] = right[key]
-
-    delta["FilePath"] = right["FilePath"]
-    # print(len(delta), delta)
 
     print(">>> Checkstyle Diff generated!")
     return delta

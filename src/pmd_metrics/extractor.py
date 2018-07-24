@@ -15,6 +15,7 @@ def extract(currentFile, previousFile, previousExists):
     previous_xml = previous_out_dir + '/previous.xml'
     
     # parse xml
+    res = list()
     delta = None
     previous_res = None
     call("pmd -d " + currentFile + " -f xml -R rulesets/internal/all-java.xml -r " + current_xml, shell=True)
@@ -25,16 +26,18 @@ def extract(currentFile, previousFile, previousExists):
          " -f xml -R rulesets/internal/all-java.xml -r " + previous_xml, shell=True)
         previous_res = parse(previous_xml, previous_out_dir)
         delta = diff(current_out_dir, previous_out_dir)
-        
-    deleteFolderContents(dir_path + '/current') 
-    deleteFolderContents(dir_path + '/previous')
+        res.append(delta)
+        res.append(current_res)
+        res.append(previous_res)
+    else :
+        res.append(current_res)
+        res.append(current_res)
+        res.append(current_res)
+
+    # deleteFolderContents(dir_path + '/current') 
+    # deleteFolderContents(dir_path + '/previous')
 
     # return res
-    res = list()
-    res.append(current_res)
-    res.append(previous_res)
-    res.append(delta)
-
     return res
 
 

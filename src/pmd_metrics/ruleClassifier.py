@@ -36,3 +36,5 @@ def classifyRule(inRule):
          return "RESOURCE"
     if rule in STYLE_CONVENTIONS:
          return "STYLE_CONVENTIONS"
+    else:
+        return inRule

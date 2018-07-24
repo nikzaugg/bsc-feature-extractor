@@ -66,9 +66,10 @@ def aggregate(previousExists):
             diff[k] = float(v) - float(res_previous[k])
 
         res = list()
+        res.append(diff)
         res.append(res_current)
         res.append(res_previous)
-        res.append(diff)
+        
     else:
         res = list()
         res.append(res_current)

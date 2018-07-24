@@ -12,7 +12,6 @@ def extract(currentFile, previousFile, previousExists):
     
     res = list()
     changes = dict()
-    severities = dict()
 
     with open(output, 'r', newline='') as scc:
         scc_reader = csv.reader(scc)
@@ -21,12 +20,11 @@ def extract(currentFile, previousFile, previousExists):
                 changes[line[0]] = changes[line[0]]+1
             elif line[0] not in changes:
                 changes[line[0]] = 1
-            if line[1] in severities:
-                severities[line[1]] = severities[line[1]]+1
-            elif line[1] not in severities:
-                severities[line[1]] = 1
+            if line[1] in changes:
+                changes[line[1]] = changes[line[1]]+1
+            elif line[1] not in changes:
+                changes[line[1]] = 1
 
     res.append(changes)
-    res.append(severities)
 
     return res

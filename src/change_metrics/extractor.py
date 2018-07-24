@@ -35,18 +35,18 @@ def extract(changeData, row):
     nrev = 0
     featureRow = list()
 
-    resKeys = changeInfo[0]
+    resKeys = changeInfo[0][2:]
 
     for entry in changeInfo:
         if entry[0] == file_path and entry[1] == commit_id:
             nrev = int(entry[2]) - 1
             if nrev == 0:
-                print("FIRST APPEARANCE OF FILE -> NO CHANGE METRICS")
+                pass
     
     if nrev > 0:
         for entry in changeInfo:
             if entry[0] == file_path and entry[2] == str(nrev):
-                featureRow = entry
+                featureRow = entry[2:]
 
     resValues = featureRow
     res = dict(zip(resKeys, resValues))

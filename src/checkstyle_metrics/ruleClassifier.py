@@ -34,3 +34,5 @@ def classifyRule(inRule):
         return "STYLE_CONVENTIONS"
     if rule in TOOL_SPECIFIC:
         return "TOOL_SPECIFIC"
+    else:
+        return "UNCLASSIFIED"

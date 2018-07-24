@@ -11,6 +11,7 @@ from pmd_metrics import extractor as metrics_pmd
 from ck_metrics import extractor as metrics_ck
 from change_metrics import extractor as metrics_change
 from nlp_metrics import extractor as metrics_nlp
+from scc_metrics import extractor as metrics_scc
 
 
 def main():
@@ -19,10 +20,6 @@ def main():
     ## ******************** ##
     ## DATA CREATED BEFORE  ##
     ## ******************** ## 
-
-    ######################################################
-    # 1) load ChangeDistiller output for current project #
-    ######################################################
 
     #######################################################
     # 2) load tf-idf matrix of considered commit-messages #
@@ -37,7 +34,7 @@ def main():
     ##############################
     # 4) load preprocess-dataset #
     ##############################
-    preprocess_data = pd.read_csv('preprocess_dataset/dataset.csv')
+    preprocess_data = pd.read_csv('preprocess_dataset/test_dataset.csv')
 
     ############################
     # COMPUTE METRICS FOR FILE #
@@ -54,6 +51,7 @@ def main():
         ck_metrics = dict()
         change_metrics = dict()
         nlp_metrics = dict()
+        scc_metrics = dict()
 
         # list() code-metrics
         # list() checkstyle-metrics
@@ -140,11 +138,12 @@ def main():
         ##########################################
         # 11) lookup tf-idf row -> save features #
         ##########################################
-        nlp_metrics = metrics_nlp.extract(nlp_data, row)
+        # nlp_metrics = metrics_nlp.extract(nlp_data, row)
 
         #####################################################
         # 12) lookup ChangeDistiller types -> save features #
         #####################################################
+        scc_metrics = metrics_scc.extract(fname_current, fname_previous, f_previous_exists)
 
         ###############################
         # 13) extract labels --> save #
@@ -159,13 +158,33 @@ def main():
         feature_row.append(ck_metrics)
         feature_row.append(change_metrics)
         feature_row.append(nlp_metrics)
+        feature_row.append(scc_metrics)
 
         feature_rows.append(feature_row)
 
     ##############################################
     # 15) print each feature-row into a data-set #
     ##############################################
+    
+    print(" ")
     print(len(feature_rows))
+    print("----------------------------------------------------")
+    for entry in feature_rows:
+        print(entry[0]) # CODE_METRICS
+        print("---------")
+        print(entry[1]) # CHECKSTYLE
+        print("---------")
+        print(entry[2]) # PMD
+        print("---------")
+        print(entry[3]) # CK_METRICS
+        print("---------")
+        print(entry[4]) # CHANGE_METRICS
+        print("---------")
+        print(entry[5]) # NLP_METRICS
+        print("---------")
+        print(entry[6]) # SCC_METRICS
+    print("----------------------------------------------------")
+    print(" ")
     print('> finished analyzing')
 
 

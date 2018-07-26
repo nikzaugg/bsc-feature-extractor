@@ -226,33 +226,6 @@ def main():
         writer.writeFeatureRows(scc_metrics_features, "scc_metrics.csv")
     writer.writeFeatureRows(labels, "labels.csv")
 
-    # for entry in feature_rows:
-    #     print("----------------------------------------------------")
-    #     print("> Code Metrics diff:")
-    #     # print(entry[0][0]) # CODE_METRICS
-    #     # print("---------")
-    #     print("> Checkstyle Metrics diff:")
-    #     # print(entry[1][0]) # CHECKSTYLE
-    #     # print("---------")
-    #     print("> PMD Metrics diff:")
-    #     # print(entry[2][0]) # PMD
-    #     # print("---------")
-    #     print("> CK Metrics diff:")
-    #     # print(entry[3][0]) # CK_METRICS
-    #     # print("---------")
-    #     print("> Change Metrics diff:")
-    #     # print(entry[4]) # CHANGE_METRICS
-    #     # print("---------")
-    #     print("> NLP Metrics:")
-    #     # print(entry[5]) # NLP_METRICS
-    #     # print("---------")
-    #     print("> SCC Metrics:")
-    #     # print(entry[6][0]) # SCC_METRICS
-    #     # print("")
-    #     print("> SCC METRICS Severities:")
-    #     # print(entry[6][1])
-    #     print("----------------------------------------------------")
-    # print(" ")
     print('> finished analyzing')
 
 

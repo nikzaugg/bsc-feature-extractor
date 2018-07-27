@@ -45,7 +45,6 @@ def main():
     ############################
     # COMPUTE METRICS FOR FILE #
     ############################
-    # list() of list() of features
     feature_rows = list()
 
     code_metrics_features = list()
@@ -121,9 +120,9 @@ def main():
             code_metrics[0]['patchRef'] = ref
             code_metrics_features.append(code_metrics[0])
 
-        # ##################################################
-        # # 6) compute checkstyle-metrics -> save features #
-        # ##################################################
+        ##################################################
+        # 6) compute checkstyle-metrics -> save features #
+        ##################################################
         if CHECKSTYLE_METRICS:
             checkstyle_metrics = metrics_checkstyle.extract(
                 FILE_CURRENT, FILE_PREVIOUS, PREVIOUS_FILE_EXISTS)
@@ -133,9 +132,9 @@ def main():
             checkstyle_metrics[0]['patchRef'] = ref
             checkstyle_metrics_features.append(checkstyle_metrics[0])
 
-        # ###########################################
-        # # 7) compute pmd-metrics -> save features #
-        # ###########################################
+        ###########################################
+        # 7) compute pmd-metrics -> save features #
+        ###########################################
         if PMD_METRICS:
             pmd_metrics = metrics_pmd.extract(
                 FILE_CURRENT, FILE_PREVIOUS, PREVIOUS_FILE_EXISTS)
@@ -145,9 +144,9 @@ def main():
             pmd_metrics[0]['patchRef'] = ref
             pmd_metrics_features.append(pmd_metrics[0])
 
-        # ###########################################
-        # # 8) compute ck-metrics -> save features #
-        # ###########################################
+        ###########################################
+        # 8) compute ck-metrics -> save features #
+        ###########################################
         if CK_METRICS:
             ck_metrics = metrics_ck.extract(
                 FILE_CURRENT, FILE_PREVIOUS, PREVIOUS_FILE_EXISTS)
@@ -157,9 +156,9 @@ def main():
             ck_metrics[0]['patchRef'] = ref
             ck_metrics_features.append(ck_metrics[0])
 
-        # #############################################
-        # # 9) lookup change-metrics -> save features #
-        # #############################################
+        #############################################
+        # 9) lookup change-metrics -> save features #
+        #############################################
         if CHANGE_METRICS:
             change_metrics = metrics_change.extract(changeData, row)
             change_metrics['fileName'] = file_path
@@ -168,9 +167,9 @@ def main():
             change_metrics['patchRef'] = ref
             change_metrics_features.append(change_metrics)
 
-        # ##########################################
-        # # 10) lookup tf-idf row -> save features #
-        # ##########################################
+        ##########################################
+        # 10) lookup tf-idf row -> save features #
+        ##########################################
         if NLP_METRICS:
             nlp_metrics = metrics_nlp.extract(nlp_data, row)
             nlp_metrics['fileName'] = file_path
@@ -179,9 +178,9 @@ def main():
             nlp_metrics['patchRef'] = ref
             nlp_metrics_features.append(nlp_metrics)
 
-        # #####################################################
-        # # 11) lookup ChangeDistiller types -> save features #
-        # #####################################################
+        #####################################################
+        # 11) lookup ChangeDistiller types -> save features #
+        #####################################################
         if SCC_METRICS:
             scc_metrics = metrics_scc.extract(
                 FILE_CURRENT, FILE_PREVIOUS, PREVIOUS_FILE_EXISTS)
